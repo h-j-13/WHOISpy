@@ -1,0 +1,24 @@
+# general .gitgnore for python
+# author : @h-j-13
+# 2018.1
+
+# IDE & editor
+.idea
+.vscode
+*.xml
+
+# python
+*.pyc
+*.exe
+*.out
+
+# log
+*.log
+nohup.out
+running.log.*
+
+# setting
+*.conf
+*.json
+
+# data
