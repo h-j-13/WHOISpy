@@ -92,14 +92,28 @@ class Domain(object):
         # punycode格式统一转为utf8
         if url.find('xn--') != -1:
             url = self.__punycode2utf8(url)
+        # 处理 public_suffix_list 中 *.tld 的情况
+        re_flag = False
         # 最长匹配后缀为 suffix,并再取后一级一并作为域名
+        global suffixes
         d = ''
         for section in reversed(url.split('.')):
             if d:
                 d = b'.' + d
             d = section + d
+            # 若上次发现了 *.<domain> 的情况(即代表下一级域名任何字符均仍可视为suffixes)
+            # 则这次不用判断,直接进入下次循环,并将结果添加进 suffixes 中
+            if re_flag:
+                re_flag = False
+                suffixes.add(d)
+                continue
+            # 发现域名不再属于 suffixes 时退出
             if d not in suffixes:
-                break
+                if '*.' + d in suffixes:
+                    re_flag = True
+                    continue
+                else:
+                    break
         # 解析域名
         Domain.domain = d
         Domain.suffix = Domain.domain.split('.', 1)[1]
@@ -107,19 +121,3 @@ class Domain(object):
         Domain.domain_punycode = self.__utf82punycode(Domain.domain)
         Domain.suffix_punycode = self.__utf82punycode(Domain.suffix)
         Domain.tld_punycode = self.__utf82punycode(Domain.tld)
-
-
-if __name__ == '__main__':
-    print Domain('http://baidu.com.cn/p/123123').domain_punycode
-    print Domain(u'中国.中国').domain
-    print Domain(u'中国.中国').suffix
-    print Domain(u'中国.中国').tld
-    print Domain(u'中国.中国').domain_punycode
-    print Domain(u'中国.中国').suffix_punycode
-    print Domain(u'中国.中国').tld_punycode
-    # print Domain(u'xn--fiqs8s.com')
-    # print Domain('xn--fiqs8s.com')
-    # print Domain('\xe4\xb8\xad\xe5\x9b\xbd.com')
-    # print Domain(u'рнидс.срб')
-    # print Domain('102.112.2O7.net')
-    # print Domain('1-0-1-1-1-0-1-1-1-1-1-1-1-.0-0-0-0-0-0-0-0-0-0-0-0-0-10-0-0-0-0-0-0-0-0-0-0-0-0-0.info')
