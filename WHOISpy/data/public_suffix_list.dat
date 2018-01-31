@@ -6768,6 +6768,10 @@ yt
 // India
 بھارت
 
+// xn--mgbbh1a
+// India
+.بارت
+
 // xn--fpcrj9c3d ("Bharat", Telugu) : IN
 // India
 భారత్
@@ -6936,6 +6940,7 @@ xxx
 *.ye
 
 // za : http://www.zadna.org.za/content/page/domain-information
+*.za
 ac.za
 agric.za
 alt.za
