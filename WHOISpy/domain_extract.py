@@ -46,7 +46,7 @@ suffixes = None
 
 class Domain(object):
     """域名的处理与解析"""
-
+    __url = ''
     domain = ''  # 默认解析为utf8编码域名
     domain_punycode = ''
     suffix = ''
@@ -59,6 +59,7 @@ class Domain(object):
         构造函数
         :param url:需要解析的url
         """
+        Domain.__url = url
         # 载入 public_suffix_list.dat 数据
         global suffixes
         if not suffixes:
@@ -109,12 +110,16 @@ class Domain(object):
 
 
 if __name__ == '__main__':
-    print Domain('http://baidu.com.cn/p/123123').domain
+    print Domain('http://baidu.com.cn/p/123123').domain_punycode
     print Domain(u'中国.中国').domain
-    print Domain(u'xn--fiqs8s.com').domain
-    print Domain('xn--fiqs8s.com').domain
-    print Domain('\xe4\xb8\xad\xe5\x9b\xbd.com').domain
-    print Domain(u'www.公司.hk').domain
-    print Domain('102.112.2O7.net').domain
-    print Domain('1-0-1-1-1-0-1-1-1-1-1-1-1-.0-0-0-0-0-0-0-0-0-0-0-0-0-10-0-0-0-0-0-0-0-0-0-0-0-0-0.info').domain
-
+    print Domain(u'中国.中国').suffix
+    print Domain(u'中国.中国').tld
+    print Domain(u'中国.中国').domain_punycode
+    print Domain(u'中国.中国').suffix_punycode
+    print Domain(u'中国.中国').tld_punycode
+    # print Domain(u'xn--fiqs8s.com')
+    # print Domain('xn--fiqs8s.com')
+    # print Domain('\xe4\xb8\xad\xe5\x9b\xbd.com')
+    # print Domain(u'рнидс.срб')
+    # print Domain('102.112.2O7.net')
+    # print Domain('1-0-1-1-1-0-1-1-1-1-1-1-1-.0-0-0-0-0-0-0-0-0-0-0-0-0-10-0-0-0-0-0-0-0-0-0-0-0-0-0.info')
