@@ -1,0 +1,30 @@
+// 转发WHOIS服务器列表
+
+// 这些WHOIS服务器可以转发WHOIS查询请求到合适的服务器中
+// 不过并不是支持所有的TLD,并且有些对请求频率做出了限制
+// 适合在找不到WHOIS服务器或连接失败时使用
+
+// 格式 whois服务器地址
+
+whois.tucows.com
+whois.rethemhosting.net
+whois.totalregistrations.com
+whois.corehub.net
+whois.cloudflare.com
+whois.easydns.com
+whois.web.com
+whois.domain.com
+whois.easyspace.com
+whois.tradeindia.com
+whois.softlayer.com
+whois.tppinternet.com
+whois2.softlayer.com
+whois.in2net.com
+whois.internetters.co.uk
+whois.register.ca
+whois.papaki.gr
+whois.paragonnames.net
+whois.authenticweb.com
+whois.sawbuck.com
+whois.webnames.ca
+
