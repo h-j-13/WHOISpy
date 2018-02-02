@@ -1,0 +1,1834 @@
+// WHOIS服务器列表
+
+// 收录了绝大部分TLD与二级域的WHOIS服务器
+// 基础数据来源 http://www.iana.org/domains/root/db/
+// 也可以通过 linux 命令
+// $ whois .cn -h whois.iana.org 查询WHOIS服务器
+// 或者通过 https://www.iana.org/whois? IANA提供的查询网站
+// 详见 https://github.com/h-j-13/WHOIS-server-list
+// 最后更新于 2018-02-02
+
+// 格式样例
+// TLD(punycode) : WHOIS服务器地址或IP
+//
+// 若 TLD 后不写WHOIS服务器 则默认为通用格式 whois.nic.{TLD}
+// *注 : 其实有一部分tld也有 {TLD}.whois-servers.net 的通用格式,但还是 whois.nic.{TLD} 格式较为普遍
+// 若WHOIS 服务器地址前有[WEB]表示找到了此TLD的注册网站,大部分可以在网站上获取WHOIS数据,但未找到其WHOIS服务器
+
+aaa
+aarp
+abarth
+abb
+abbott
+abbvie
+abc
+able
+abogado
+abudhabi
+academy
+accenture
+accountant
+accountants
+aco
+active
+actor
+adac
+ads
+adult
+aeg
+aetna
+afamilycompany
+afl
+africa
+agakhan
+agency
+aig
+aigo
+airbus
+airforce
+airtel
+akdn
+alfaromeo
+alibaba
+alipay
+allfinanz
+allstate
+ally
+alsace
+alstom
+americanexpress
+americanfamily
+amex
+amfam
+amica
+amsterdam
+analytics
+android
+anquan
+anz
+aol
+apartments
+app
+apple
+aquarelle
+arab
+aramco
+archi
+army
+art
+arte
+asda
+associates
+athleta
+attorney
+auction
+audi
+audible
+audio
+auspost
+author
+auto
+autos
+avianca
+aws
+axa
+azure
+baby
+baidu
+banamex
+bananarepublic
+band
+bank
+bar
+barcelona
+barclaycard
+barclays
+barefoot
+bargains
+baseball
+basketball
+bauhaus
+bayern
+bbc
+bbt
+bbva
+bcg
+bcn
+beats
+beauty
+beer
+bentley
+berlin
+best
+bestbuy
+bet
+bharti
+bible
+bid
+bike
+bing
+bingo
+bio
+black
+blackfriday
+blanco
+blockbuster
+blog
+bloomberg
+blue
+bms
+bmw
+bnl
+bnpparibas
+boats
+boehringer
+bofa
+bom
+bond
+boo
+book
+booking
+boots
+bosch
+bostik
+boston
+bot
+boutique
+box
+bradesco
+bridgestone
+broadway
+broker
+brother
+brussels
+budapest
+bugatti
+build
+builders
+business
+buy
+buzz
+bzh
+cab
+cafe
+cal
+call
+calvinklein
+cam
+camera
+camp
+cancerresearch
+canon
+capetown
+capital
+capitalone
+car
+caravan
+cards
+care
+career
+careers
+cars
+cartier
+casa
+case
+caseih
+cash
+casino
+catering
+catholic
+cba
+cbn
+cbre
+cbs
+ceb
+center
+ceo
+cern
+cfa
+cfd
+chanel
+channel
+chase
+chat
+cheap
+chintai
+chloe
+christmas
+chrome
+chrysler
+church
+cipriani
+circle
+cisco
+citadel
+citi
+citic
+city
+cityeats
+claims
+cleaning
+click
+clinic
+clinique
+clothing
+cloud
+club
+clubmed
+coach
+codes
+coffee
+college
+cologne
+comcast
+commbank
+community
+company
+compare
+computer
+comsec
+condos
+construction
+consulting
+contact
+contractors
+cooking
+cookingchannel
+cool
+corsica
+country
+coupon
+coupons
+courses
+credit
+creditcard
+creditunion
+cricket
+crown
+crs
+cruise
+cruises
+csc
+cuisinella
+cymru
+cyou
+dabur
+dad
+dance
+data
+date
+dating
+datsun
+day
+dclk
+dds
+deal
+dealer
+deals
+degree
+delivery
+dell
+deloitte
+delta
+democrat
+dental
+dentist
+desi
+design
+dev
+dhl
+diamonds
+diet
+digital
+direct
+directory
+discount
+discover
+dish
+diy
+dnp
+docs
+doctor
+dodge
+dog
+doha
+domains
+doosan
+dot
+download
+drive
+dtv
+dubai
+duck
+dunlop
+duns
+dupont
+durban
+dvag
+dvr
+earth
+eat
+eco
+edeka
+education
+email
+emerck
+energy
+engineer
+engineering
+enterprises
+epost
+epson
+equipment
+ericsson
+erni
+esq
+estate
+esurance
+etisalat
+eurovision
+eus
+events
+everbank
+exchange
+expert
+exposed
+express
+extraspace
+fage
+fail
+fairwinds
+faith
+family
+fan
+fans
+farm
+farmers
+fashion
+fast
+fedex
+feedback
+ferrari
+ferrero
+fiat
+fidelity
+fido
+film
+final
+finance
+financial
+fire
+firestone
+firmdale
+fish
+fishing
+fit
+fitness
+flickr
+flights
+flir
+florist
+flowers
+flsmidth
+fly
+foo
+food
+foodnetwork
+football
+ford
+forex
+forsale
+forum
+foundation
+fox
+free
+fresenius
+frl
+frogans
+frontdoor
+frontier
+ftr
+fujitsu
+fujixerox
+fun
+fund
+furniture
+futbol
+fyi
+gal
+gallery
+gallo
+gallup
+game
+games
+gap
+garden
+gbiz
+gdn
+gea
+gent
+genting
+george
+ggee
+gift
+gifts
+gives
+giving
+glade
+glass
+gle
+global
+globo
+gmail
+gmbh
+gmo
+gmx
+godaddy
+gold
+goldpoint
+golf
+goo
+goodhands
+goodyear
+goog
+google
+gop
+got
+grainger
+graphics
+gratis
+green
+gripe
+grocery
+group
+guardian
+gucci
+guge
+guide
+guitars
+guru
+hair
+hamburg
+hangout
+haus
+hbo
+hdfc
+hdfcbank
+health
+healthcare
+help
+helsinki
+here
+hermes
+hgtv
+hiphop
+hisamitsu
+hitachi
+hiv
+hkt
+hockey
+holdings
+holiday
+homedepot
+homegoods
+homes
+homesense
+honda
+honeywell
+horse
+hospital
+host
+hosting
+hot
+hoteles
+hotels
+hotmail
+house
+how
+hsbc
+htc
+hughes
+hyatt
+hyundai
+ibm
+icbc
+ice
+icu
+ieee
+ifm
+iinet
+ikano
+imamat
+imdb
+immo
+immobilien
+industries
+infiniti
+ing
+ink
+institute
+insurance
+insure
+intel
+international
+intuit
+investments
+ipiranga
+irish
+iselect
+ismaili
+ist
+istanbul
+itau
+itv
+iveco
+iwc
+jaguar
+java
+jcb
+jcp
+jeep
+jetzt
+jewelry
+jio
+jlc
+jll
+jmp
+jnj
+joburg
+jot
+joy
+jpmorgan
+jprs
+juegos
+juniper
+kaufen
+kddi
+kerryhotels
+kerrylogistics
+kerryproperties
+kfh
+kia
+kim
+kinder
+kindle
+kitchen
+kiwi
+koeln
+komatsu
+kosher
+kpmg
+kpn
+krd
+kred
+kuokgroup
+kyoto
+lacaixa
+ladbrokes
+lamborghini
+lamer
+lancaster
+lancia
+lancome
+land
+landrover
+lanxess
+lasalle
+lat
+latino
+latrobe
+law
+lawyer
+lds
+lease
+leclerc
+lefrak
+legal
+lego
+lexus
+lgbt
+liaison
+lidl
+life
+lifeinsurance
+lifestyle
+lighting
+like
+lilly
+limited
+limo
+lincoln
+linde
+link
+lipsy
+live
+living
+lixil
+loan
+loans
+locker
+locus
+loft
+lol
+london
+lotte
+lotto
+love
+lpl
+lplfinancial
+ltd
+ltda
+lundbeck
+lupin
+luxe
+luxury
+macys
+madrid
+maif
+maison
+makeup
+man
+management
+mango
+map
+market
+marketing
+markets
+marriott
+marshalls
+maserati
+mattel
+mba
+mcd
+mcdonalds
+mckinsey
+med
+media
+meet
+melbourne
+meme
+memorial
+men
+menu
+meo
+merckmsd
+metlife
+miami
+microsoft
+mini
+mint
+mit
+mitsubishi
+mlb
+mls
+mma
+mobile
+mobily
+moda
+moe
+moi
+mom
+monash
+money
+monster
+montblanc
+mopar
+mormon
+mortgage
+moscow
+moto
+motorcycles
+mov
+movie
+movistar
+msd
+mtn
+mtpc
+mtr
+mutual
+mutuelle
+nab
+nadex
+nagoya
+nationwide
+natura
+navy
+nba
+nec
+netbank
+netflix
+network
+neustar
+new
+newholland
+news
+next
+nextdirect
+nexus
+nfl
+ngo
+nhk
+nico
+nike
+nikon
+ninja
+nissan
+nissay
+nokia
+northwesternmutual
+norton
+now
+nowruz
+nowtv
+nra
+nrw
+ntt
+nyc
+obi
+observer
+off
+office
+okinawa
+olayan
+olayangroup
+oldnavy
+ollo
+omega
+one
+ong
+onl
+online
+onyourside
+ooo
+open
+oracle
+orange
+organic
+orientexpress
+origins
+osaka
+otsuka
+ott
+ovh
+page
+pamperedchef
+panasonic
+panerai
+paris
+pars
+partners
+parts
+party
+passagens
+pay
+pccw
+pet
+pfizer
+pharmacy
+phd
+philips
+phone
+photo
+photography
+photos
+physio
+piaget
+pics
+pictet
+pictures
+pid
+pin
+ping
+pink
+pioneer
+pizza
+place
+play
+playstation
+plumbing
+plus
+pnc
+pohl
+poker
+politie
+porn
+pramerica
+praxi
+press
+prime
+prod
+productions
+prof
+progressive
+promo
+properties
+property
+protection
+pru
+prudential
+pub
+pwc
+qpon
+quebec
+quest
+qvc
+racing
+radio
+raid
+read
+realestate
+realtor
+realty
+recipes
+red
+redstone
+redumbrella
+rehab
+reise
+reisen
+reit
+reliance
+ren
+rent
+rentals
+repair
+report
+republican
+rest
+restaurant
+review
+reviews
+rexroth
+rich
+richardli
+ricoh
+rightathome
+ril
+rio
+rip
+rmit
+rocher
+rocks
+rodeo
+rogers
+room
+rsvp
+rugby
+ruhr
+run
+rwe
+ryukyu
+saarland
+safe
+safety
+sakura
+sale
+salon
+samsclub
+samsung
+sandvik
+sandvikcoromant
+sanofi
+sap
+sapo
+sarl
+sas
+save
+saxo
+sbi
+sbs
+sca
+scb
+schaeffler
+schmidt
+scholarships
+school
+schule
+schwarz
+science
+scjohnson
+scor
+scot
+search
+seat
+secure
+security
+seek
+select
+sener
+services
+ses
+seven
+sew
+sex
+sexy
+sfr
+shangrila
+sharp
+shaw
+shell
+shia
+shiksha
+shoes
+shop
+shopping
+shouji
+show
+showtime
+shriram
+silk
+sina
+singles
+site
+ski
+skin
+sky
+skype
+sling
+smart
+smile
+sncf
+soccer
+social
+softbank
+software
+sohu
+solar
+solutions
+song
+sony
+soy
+space
+spiegel
+sport
+spot
+spreadbetting
+srl
+srt
+stada
+staples
+star
+starhub
+statebank
+statefarm
+statoil
+stc
+stcgroup
+stockholm
+storage
+store
+stream
+studio
+study
+style
+sucks
+supplies
+supply
+support
+surf
+surgery
+suzuki
+swatch
+swiftcover
+swiss
+sydney
+symantec
+systems
+tab
+taipei
+talk
+taobao
+target
+tatamotors
+tatar
+tattoo
+tax
+taxi
+tci
+tdk
+team
+tech
+technology
+telecity
+telefonica
+temasek
+tennis
+teva
+thd
+theater
+theatre
+tiaa
+tickets
+tienda
+tiffany
+tips
+tires
+tirol
+tjmaxx
+tjx
+tkmaxx
+tmall
+today
+tokyo
+tools
+top
+toray
+toshiba
+total
+tours
+town
+toyota
+toys
+trade
+trading
+training
+travelchannel
+travelers
+travelersinsurance
+trust
+trv
+tube
+tui
+tunes
+tushu
+tvs
+ubank
+ubs
+uconnect
+unicom
+university
+uno
+uol
+ups
+vacations
+vana
+vanguard
+vegas
+ventures
+verisign
+versicherung
+vet
+viajes
+video
+vig
+viking
+villas
+vin
+vip
+virgin
+visa
+vision
+vista
+vistaprint
+viva
+vivo
+vlaanderen
+vodka
+volkswagen
+volvo
+vote
+voting
+voto
+voyage
+vuelos
+wales
+walmart
+walter
+wang
+wanggou
+warman
+watch
+watches
+weather
+weatherchannel
+webcam
+weber
+website
+wed
+wedding
+weibo
+weir
+whoswho
+wien
+wiki
+williamhill
+win
+windows
+wine
+winners
+wme
+wolterskluwer
+woodside
+work
+works
+world
+wow
+wtc
+wtf
+xbox
+xerox
+xfinity
+xihuan
+xin
+xn--11b4c3d
+xn--1ck2e1b
+xn--1qqw23a
+xn--30rr7y
+xn--3bst00m
+xn--3ds443g
+xn--3oq18vl8pn36a
+xn--3pxu8k
+xn--42c2d9a
+xn--45q11c
+xn--4gbrim
+xn--55qw42g
+xn--55qx5d
+xn--5su34j936bgsg
+xn--5tzm5g
+xn--6frz82g
+xn--6qq986b3xl
+xn--80adxhks
+xn--80aqecdr1a
+xn--80asehdb
+xn--80aswg
+xn--8y0a063a
+xn--9dbq2a
+xn--9et52u
+xn--9krt00a
+xn--b4w605ferd
+xn--bck1b9a5dre4c
+xn--c1avg
+xn--c2br7g
+xn--cck2b3b
+xn--cg4bki
+xn--czr694b
+xn--czrs0t
+xn--czru2d
+xn--d1acj3b
+xn--eckvdtc9d
+xn--efvy88h
+xn--estv75g
+xn--fct429k
+xn--fhbei
+xn--fiq228c5hs
+xn--fiq64b
+xn--fjq720a
+xn--flw351e
+xn--fzys8d69uvgm
+xn--g2xx48c
+xn--gckr3f0f
+xn--gk3at1e
+xn--hxt814e
+xn--i1b6b1a6a2e
+xn--imr513n
+xn--io0a7i
+xn--j1aef
+xn--jlq61u9w7b
+xn--jvr189m
+xn--kcrx77d1x4a
+xn--kpu716f
+xn--kput3i
+xn--mgba3a3ejt
+xn--mgba7c0bbn0a
+xn--mgbaakc7dvf
+xn--mgbab2bd
+xn--mgbb9fbpob
+xn--mgbca7dzdo
+xn--mgbi4ecexp
+xn--mgbt3dhd
+xn--mk1bu44c
+xn--mxtq1m
+xn--ngbc5azd
+xn--ngbe9e0a
+xn--ngbrx
+xn--nqv7f
+xn--nqv7fs00ema
+xn--nyqy26a
+xn--p1acf
+xn--pbt977c
+xn--pssy2u
+xn--q9jyb4c
+xn--qcka1pmc
+xn--rhqv96g
+xn--rovu88b
+xn--ses554g
+xn--t60b56a
+xn--tckwe
+xn--tiq49xqyj
+xn--unup4y
+xn--vermgensberater-ctb
+xn--vermgensberatung-pwb
+xn--vhquv
+xn--vuq861b
+xn--w4r85el8fhu5dnra
+xn--w4rs40l
+xn--xhq521b
+xn--zfr164b
+xperia
+xyz
+yachts
+yahoo
+yamaxun
+yandex
+yodobashi
+yoga
+yokohama
+you
+youtube
+yun
+zappos
+zara
+zero
+zip
+zippo
+zone
+zuerich
+
+br.com : whois.centralnic.net
+cn.com : whois.centralnic.net
+de.com : whois.centralnic.net
+eu.com : whois.centralnic.net
+gb.com : whois.centralnic.net
+gb.net : whois.centralnic.net
+gr.com : whois.centralnic.net
+hu.com : whois.centralnic.net
+in.net : whois.centralnic.net
+no.com : whois.centralnic.net
+qc.com : whois.centralnic.net
+ru.com : whois.centralnic.net
+sa.com : whois.centralnic.net
+se.com : whois.centralnic.net
+se.net : whois.centralnic.net
+uk.com : whois.centralnic.net
+uk.net : whois.centralnic.net
+us.com : whois.centralnic.net
+uy.com : whois.centralnic.net
+za.com : whois.centralnic.net
+jpn.com : whois.centralnic.net
+web.com : whois.centralnic.net
+
+// com 有两个TLD whois.verisign-grs.com,whois.crsnic.net
+// 国内 whois.verisign-grs.com 效果更好一点
+
+com : whois.verisign-grs.com
+net : whois.verisign-grs.com
+
+za.net : whois.za.net
+eu.org : whois.eu.org
+za.org : whois.za.org
+org : whois.pir.org
+
+edu : whois.educause.edu
+gov : whois.dotgov.gov
+int : whois.iana.org
+
+// mil
+
+e164.arpa : whois.ripe.net
+arpa : whois.iana.org
+
+aero : whois.aero
+asia : whois.nic.asia
+biz : whois.biz
+cat : whois.nic.cat
+coop : whois.nic.coop
+info : whois.afilias.net
+jobs : whois.nic.jobs
+mobi : whois.afilias.net
+museum : whois.nic.museum
+name : whois.nic.name
+post : whois.dotpostregistry.net
+pro : whois.afilias.net
+tel : whois.nic.tel
+travel : whois.nic.travel
+xxx : whois.nic.xxx
+ac : whois.nic.ac
+
+// ad : [WEB]www.nic.ad
+
+ae : whois.aeda.net.ae
+af : whois.nic.af
+ag : whois.nic.ag
+ai : whois.nic.ai
+
+// al : [WEB]https://www.akep.al/en/kerkoni-domain-2
+
+am : whois.amnic.net
+
+// ao : [WEB]www.dns.ao
+// aq : [WEB]2day.com
+
+ar : whois.nic.ar
+as : whois.nic.as
+priv.at : whois.nic.priv.at : # : "unofficial" : SLD
+at : whois.nic.at
+au : whois.audns.net.au
+aw : whois.nic.aw
+ax : whois.ax
+
+// az : [WEB]http://www.nic.az/
+// ba : [WEB]http://www.nic.ba/stream/whois/
+// bb : [WEB]http://whois.telecoms.gov.bb/search_domain.php
+// bd : [WEB]http://www.registry.com.bd/whois.php
+
+be : whois.dns.be
+
+// bf : [WEB]http://www.arce.bf/ : http://www.onatel.bf/internet/domaine.htm
+
+bg : whois.register.bg
+
+// bh : [WEB]www.inet.com.bh
+
+bi : whois1.nic.bi
+bj : whois.nic.bj
+
+// bl
+
+bm : whois.afilias-srs.net
+bn : whois.bnnic.bn
+bo : whois.nic.bo
+
+// bq
+
+br : whois.registro.br
+
+// bs : [WEB]http://www.register.bs/
+// bt : [WEB]http://www.nic.bt/
+// bv : [WEB]http://www.norid.no/domenenavnbaser/bv-sj.html
+
+by : whois.cctld.by
+bw : whois.nic.net.bw
+bz : whois.afilias-srs.net
+co.ca : whois.co.ca
+ca : whois.cira.ca
+cc : ccwhois.verisign-grs.com
+cd : whois.nic.cd
+cf : whois.dot.cf
+
+// cg
+
+ch : whois.nic.ch
+ci : whois.nic.ci
+
+// ck
+
+cl : whois.nic.cl
+cm : whois.netcom.cm
+edu.cn : whois.edu.cn
+cn : whois.cnnic.cn
+uk.co : whois.uk.co
+co : whois.nic.co
+cr : whois.nic.cr
+
+// cu : [WEB]http://www.nic.cu/
+// cv : [WEB]http://www.dns.cv/
+// cw : [WEB]http://www.uoc.cw/ictssite/index.php/domreg/registering-a-cw-domain/register
+
+cx : whois.nic.cx
+
+// cy : [WEB]http://www.nic.cy/nslookup/online_database.php
+
+cz : whois.nic.cz
+de : whois.denic.de
+
+// dj : [WEB]http://www.dj/
+
+dk : whois.dk-hostmaster.dk
+dm : whois.nic.dm
+do : whois.nic.do
+dz : whois.nic.dz
+ec : whois.nic.ec
+ee : whois.tld.ee
+
+// eg : [WEB]http://lookup.egregistry.eg/english.aspx
+
+// eh
+// er : [WEB]http://www.afridns.org/er/tld_er.txt
+// es : [WEB]https://www.nic.es/
+// et : [WEB]http://www.ethionet.et/
+
+eu : whois.eu
+fi : whois.fi
+fj : whois.usp.ac.fj
+
+// fk : [WEB]http://www.fidc.co.fk/
+// fm : [WEB]http://dot.fm/whois/
+
+fo : whois.nic.fo
+fr : whois.nic.fr
+ga : whois.dot.ga
+
+// gb
+
+gd : whois.nic.gd
+
+// ge : [WEB]http://www.registration.ge/
+
+gf : whois.mediaserv.net
+gg : whois.gg
+gh : whois.nic.gh
+gi : whois2.afilias-grs.net
+gl : whois.nic.gl
+
+// gm : [WEB]http://www.nic.gm/htmlpages/whois.htm
+// gn : [WEB]http://www.psg.com/dns/gn/
+// gp : [WEB]https://www.dom-enic.com/whois.html
+
+gq : whois.dominio.gq
+
+// gr : [WEB]https://grweb.ics.forth.gr/public/whois
+
+gs : whois.nic.gs
+
+// gt : [WEB]http://www.gt/
+// gu : [WEB]http://gadao.gov.gu/domainsearch.htm
+// gw : [WEB]http://nic.gw/en/whois/
+
+gy : whois.registry.gy
+hk : whois.hkirc.hk
+hm : whois.registry.hm
+hn : whois.nic.hn
+hr : whois.dns.hr
+ht : whois.nic.ht
+hu : whois.nic.hu
+id : whois.id
+ie : whois.domainregistry.ie
+il : whois.isoc.org.il
+im : whois.nic.im
+in : whois.inregistry.net
+io : whois.nic.io
+iq : whois.cmc.iq
+ir : whois.nic.ir
+is : whois.isnic.is
+it : whois.nic.it
+je : whois.je
+
+// jm : [WEB]http://myspot.mona.uwi.edu/mits/
+// jo : [WEB]http://www.dns.jo/Whois.aspx
+
+jp : whois.jprs.jp
+ke : whois.kenic.or.ke
+kg : whois.kg
+
+// kh : [WEB]https://www.trc.gov.kh/en/offline-services/dns-registration/
+
+ki : whois.nic.ki
+
+// km : [WEB]www.domaine.km
+
+kn : whois.nic.kn
+
+// kp : [WEB]http://www.star.co.kp/
+
+kr : whois.kr
+kw : whois.nic.kw
+ky : whois.kyregistry.ky
+kz : whois.nic.kz
+la : whois.nic.la
+
+// lb : [WEB]http://www.aub.edu.lb/lbdr/
+
+lc : whois2.afilias-grs.net
+li : whois.nic.li
+lk : whois.nic.lk
+
+// lr : [WEB]http://www.psg.com/dns/lr/
+// ls : [WEB]http://www.nic.ls/
+
+lt : whois.domreg.lt
+lu : whois.dns.lu
+lv : whois.nic.lv
+ly : whois.nic.ly
+ma : whois.registre.ma
+
+// mc : [WEB]www.nic.mc
+
+md : whois.nic.md
+me : whois.nic.me
+
+// mf
+
+mg : whois.nic.mg
+
+// mh : [WEB]www.nic.net.mh
+
+mk : whois.marnet.mk
+ml : whois.dot.mk
+
+// mm : [WEB]www.nic.mm
+
+mn : whois.nic.mn
+
+// mo : [WEB]http://www.monic.mo/
+// mp : [WEB]get.mp
+
+mq : whois.mediaserv.net
+mr : whois.nic.mr
+ms : whois.nic.ms
+
+// mt : [WEB]https://www.nic.org.mt/dotmt/
+
+mu : whois.nic.mu
+
+// mv : [WEB]www.dhiraagu.com.mv
+// mw : [WEB]http://www.registrar.mw/
+
+mx : whois.mx
+my : whois.mynic.my
+mz : whois.nic.mz
+na : whois.na-nic.com.na
+nc : whois.nc
+
+// ne : [WEB]http://www.intnet.ne
+
+nf : whois.nic.nf
+ng : whois.nic.net.ng
+
+// ni : [WEB]http://www.nic.ni/
+
+nl : whois.domain-registry.nl
+no : whois.norid.no
+
+// np : [WEB]http://register.mos.com.np/np-whois-lookup
+// nr : [WEB]http://www.cenpac.net.nr/dns/whois.html
+
+nu : whois.iis.nu
+nz : whois.srs.net.nz
+om : whois.registry.om
+
+// pa : [WEB]http://www.nic.pa/
+
+pe : kero.yachay.pe
+pf : whois.registry.pf
+
+// pg : [WEB]http://www.unitech.ac.pg/
+// edu.ph : [WEB]http://services.ph.net/dns/query.pl
+// gov.ph : [WEB]http://dns.gov.ph/
+// ph : [WEB]https://whois.dot.ph/
+// pk : [WEB]http://www.pknic.net.pk/
+
+co.pl : whois.co.pl
+pl : whois.dns.pl
+pm : whois.nic.pm
+
+// pn : [WEB]http://www.pitcairn.pn/PnRegistry/
+
+pr : whois.afilias-srs.net
+ps : whois.pnina.ps
+pt : whois.dns.pt
+pw : whois.nic.pw
+
+// py : [WEB]http://www.nic.py/consulta-datos.php
+
+qa : whois.registry.qa
+re : whois.nic.re
+ro : whois.rotld.ro
+rs : whois.rnids.rs
+edu.ru : whois.informika.ru
+ru : whois.tcinet.ru
+rw : whois.ricta.org.rw
+sa : whois.nic.net.sa
+sb : whois.nic.net.sb
+sc : whois2.afilias-grs.net
+
+// sd : [WEB]http://wwe.domains.sd/
+
+se : whois.iis.se
+sg : whois.sgnic.sg
+sh : whois.nic.sh
+si : whois.register.si
+
+// sj : [WEB]http://www.norid.no/domenenavnbaser/bv-sj.html
+
+sk : whois.sk-nic.sk
+sl : whois.nic.sl
+sm : whois.nic.sm
+sn : whois.nic.sn
+so : whois.nic.so
+
+// sr : [WEB]www.register.sr
+
+// ss
+
+st : whois.nic.st
+su : whois.tcinet.ru
+
+// sv : [WEB]http://www.svnet.org.sv/
+
+sx : whois.sx
+sy : whois.tld.sy
+
+// sz : [WEB]http://www.sispa.org.sz/
+
+tc : whois.nic.tc
+
+// td : [WEB]http://www.nic.td/
+
+tf : whois.nic.tf
+tg : whois.nic.tg
+th : whois.thnic.co.th
+
+// tj : [WEB]http://www.nic.tj/whois.html
+
+tk : whois.dot.tk
+tl : whois.nic.tl
+tm : whois.nic.tm
+tn : whois.ati.tn
+to : whois.tonic.to
+tr : whois.nic.tr
+
+// tt : [WEB]http://www.nic.tt/cgi-bin/search.pl
+
+tv : tvwhois.verisign-grs.com
+tw : whois.twnic.net.tw
+tz : whois.tznic.or.tz
+biz.ua : whois.biz.ua
+co.ua : whois.co.ua
+pp.ua : whois.pp.ua
+ua : whois.ua
+ug : whois.co.ug
+ac.uk : whois.ja.net
+
+// bl.uk
+// british-library.uk
+
+gov.uk : whois.ja.net
+
+// icnet.uk
+// jet.uk
+// mod.uk
+// nhs.uk
+// nls.uk
+// parliament.uk
+// police.uk
+
+uk : whois.nic.uk
+
+// um
+
+fed.us : whois.nic.gov
+us : whois.nic.us
+
+// com.uy : [WEB]https://nic.com.uy/public/consulta-whois/acceder.action
+
+uy : whois.nic.org.uy
+uz : whois.cctld.uz
+
+// va
+
+vc : whois2.afilias-grs.net
+ve : whois.nic.ve
+vg : whois.nic.vg
+
+// vi : [WEB]https://secure.nic.vi/whois-lookup/
+// vn : [WEB]http://www.vnnic.vn/en
+
+vu : vunic.vu
+wf : whois.nic.wf
+ws : whois.website.ws
+
+// ye : [WEB]http://www.y.net.ye/services/domain_name.htm
+
+yt : whois.nic.yt
+ac.za : whois.ac.za
+alt.za : whois.alt.za
+co.za : whois.registry.net.za
+gov.za : whois.gov.za
+net.za : net-whois.registry.net.za
+org.za : org-whois.registry.net.za
+web.za : web-whois.registry.net.za
+
+// za : [WEB]http://www.zadna.org.za/content/page/domain-information
+
+zm : whois.nic.zm
+
+// zw : [WEB]http://www.zispa.co.zw/
+
+
+// --India--
+xn--2scrj9c : whois.inregistry.net
+xn--3hcrj9c : whois.inregistry.net
+xn--45br5cyl : whois.inregistry.net
+xn--gecrj9c : whois.inregistry.net
+xn--h2breg3eve : whois.inregistry.net
+xn--h2brj9c8c : whois.inregistry.net
+xn--h2brj9c : whois.inregistry.net
+xn--xkc2dl3a5ee0h : whois.inregistry.net
+xn--45brj9c : whois.inregistry.net
+xn--rvc1e0am3e : whois.inregistry.net
+xn--s9brj9c : whois.inregistry.net
+xn--mgbbh1a71e : whois.inregistry.net
+xn--mgbbh1a : whois.inregistry.net
+xn--mgbgu82a : whois.inregistry.net
+xn--fpcrj9c3d : whois.inregistry.net
+
+// --Korea, : Republic : of--
+xn--3e0b707e : whois.kr
+
+// --Bangladesh--
+// xn--54b7fta0cc
+
+// --Kazakhstan--
+xn--80ao21a : whois.nic.kz
+
+// --Serbia--
+xn--90a3ac : whois.rnids.rs
+
+// --Bulgaria--
+xn--90ae : whois.imena.bg
+
+// --Belarus--
+xn--90ais : whois.cctld.by
+
+// --Singapore--
+xn--clchc0ea0b2g2a9gcd : whois.sgnic.sg
+xn--yfro4i67o : whois.sgnic.sg
+
+// --Macedonia--
+xn--d1alf : whois.marnet.mk
+
+// --European : Union--
+xn--e1a4c : whois.eu
+
+// --China--
+xn--fiqs8s : cwhois.cnnic.cn
+xn--fiqz9s : cwhois.cnnic.cn
+xn--j6w193g : whois.hkirc.hk
+xn--kprw13d : whois.twnic.net.tw
+xn--kpry57d : whois.twnic.net.tw
+// xn--mix891f : [WEB]http://www.monic.mo/
+
+// --Sri : Lanka--
+xn--fzc2c9e2c : whois.nic.lk
+
+// --Ukraine--
+xn--j1amh : whois.dotukr.com
+
+// --Mongolia--
+// xn--l1acc
+
+// --Algeria--
+xn--lgbbat1ad8j : whois.nic.dz
+
+// --Oman--
+xn--mgb9awbf : whois.registry.om
+
+// --Iran--
+xn--mgba3a4f16a : whois.nic.ir
+
+// --United : Arab : Emirates--
+xn--mgbaam7a8h : whois.aeda.net.ae
+
+// --Pakistan--
+// xn--mgbai9azgqp6j
+
+// --Jordan--
+// xn--mgbayh7gpa : [WEB]http://idn.jo/whois_a.aspx
+
+// --Morocco--
+// xn--mgbc0a9azcg
+
+// --Saudi : Arabia--
+xn--mgberp4a5d4ar : whois.nic.net.sa
+
+// --Sudan--
+// xn--mgbpl2fh
+
+// --Iraq--
+xn--mgbtx2b : whois.cmc.iq
+
+// --Malaysia : AW--
+xn--mgbx4cd0ab : whois.mynic.my
+
+// --Georgia--
+xn--node : whois.itdc.ge
+
+// --Thailand--
+xn--o3cw4h : whois.thnic.co.th
+
+// --Syria--
+xn--ogbpf8fl : whois.tld.sy
+
+// --Russian : Federation--
+xn--p1ai : whois.tcinet.ru
+
+// --Tunisia--
+// xn--pgbs0dh
+
+// --Greece--
+// xn--qxam : [WEB]https://grweb.ics.forth.gr/public/whois.jsp?lang=en
+
+// --Egypt--
+xn--wgbh1c : whois.dotmasr.eg
+
+// --Qatar--
+xn--wgbl6a : whois.registry.qa
+
+// --Sri : Lanka--
+xn--xkc2al3hye2a : whois.nic.lk
+
+// --Armenia--
+xn--y9a3aq : whois.amnic.net
+
+// --Palestinian : Territory--
+xn--ygbi2ammx : whois.pnina.ps
