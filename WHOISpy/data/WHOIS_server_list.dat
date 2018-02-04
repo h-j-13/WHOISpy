@@ -1320,7 +1320,7 @@ am : whois.amnic.net
 
 ar : whois.nic.ar
 as : whois.nic.as
-priv.at : whois.nic.priv.at : # : "unofficial" : SLD
+priv.at : whois.nic.priv.at
 at : whois.nic.at
 au : whois.audns.net.au
 aw : whois.nic.aw
