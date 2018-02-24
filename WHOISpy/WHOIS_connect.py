@@ -10,7 +10,24 @@ https://github.com/Anorov/PySocks
 
 支持socks4,socks5形式的代理
 
-
+如果不使用代理的话,使用python自带的socket库即可较为简单的完成请求的过程
+>>> import socket
+>>>
+>>> try: # socket通信 ipv4 超时10s 连结43端口
+>>>    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+>>>    s.settimeout(10)
+>>>    s.connect((hostname, 43))
+>>>    # 发送查询请求
+>>>    s.send(bytes(query_bytes,'utf-8') + '\r\n')
+>>>    # 接收数据
+>>>    # recv returns bytes
+>>>    while True:
+>>>        d = s.recv(4096)
+>>>        response += d
+>>>        if not d:
+>>>            break
+>>> except socket.error as socketerror:
+>>>    print('Socket Error:', socketerror)
 """
 
 import socks
