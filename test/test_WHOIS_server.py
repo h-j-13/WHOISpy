@@ -31,15 +31,18 @@ class TestDomain(unittest.TestCase):
                     self.assertEqual(WHOIS_server.WHOIS_server().get_WHOIS_server(t), 'whois.nic.' + t)
 
     def test_get_WHOIS_server(self):
-        count = 0
+        tld_count = 0
+        fail_count = 0
         for domain in self.test_domain_list:
             t = domain_extract.Domain(domain).tld_punycode
             s = domain_extract.Domain(domain).suffix_punycode
             if not WHOIS_server.WHOIS_server().get_WHOIS_server(s):
                 if not WHOIS_server.WHOIS_server().get_WHOIS_server(t):
                     print t + "\t don't have record about WHOIS server"
-                    count += 1
-        if count:
+                    fail_count += 1
+            tld_count += 1
+        if fail_count:
             print "==================================================================="
-            print "total " + str(count) + " tld or suffix can't get their WHOIS server"
+            print "(" + str(tld_count - fail_count) + " / " + str(tld_count) + ") TLD pass,",
+            print " total " + str(fail_count) + " tld or suffix can't get their WHOIS server"
             print "maybe update the WHOISpy/data/WHOIS_server_list.dat can fix a few"
