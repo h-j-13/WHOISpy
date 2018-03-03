@@ -28,6 +28,15 @@ https://github.com/Anorov/PySocks
 >>>            break
 >>> except socket.error as socketerror:
 >>>    print('Socket Error:', socketerror)
+
+因为使用域名来访问WHOIS服务器,所以DNS过程是不可避免的,然后Liunx默认情况是没有DNS缓存的
+因此在Linux环境下运行时,非常推荐打开Linux DNS缓存已获得更高的效率
+
+$ sudo apt-get install nscd
+
+详细使用说明:
+http://blog.163.com/qiushuhui1989@126/blog/static/270110892015172723478/
+https://stackoverflow.com/questions/11020027/dns-caching-in-linux
 """
 
 import socks
