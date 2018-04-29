@@ -46,7 +46,7 @@ from WHOIS_server import WHOIS_server
 global WHOIS_server_data
 WHOIS_server_data = WHOIS_server()
 
-
+# todo 测试WHOIS com的频率是否受限
 def WHOIS_connect(domain_punycode,
                   WHOIS_srv,
                   socket_time_out=10,
