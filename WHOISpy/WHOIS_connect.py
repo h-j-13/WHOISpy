@@ -60,10 +60,6 @@ def WHOIS_connect(domain_punycode,
                   use_relay_WHOIS_server=False):
     """
     与 WHOIS 服务器通信,获取WHOIS数据
-
-    三次重试
-    支持SOCKS4,SOCKS5代理
-    支持使用转发 WHOIS 服务器
     :param domain_punycode:     域名(punycode格式)
     :param WHOIS_srv:           WHOIS 服务器地址/ip
     :param socket_time_out:     socket 连接超时时间
@@ -76,6 +72,12 @@ def WHOIS_connect(domain_punycode,
     :param proxy_password:      代理密码
     :param use_relay_WHOIS_server:  是否使用转发服务器查询标记
     :return:WHOIS 服务器返回的原始域名 WHOIS 数据
+
+    多次重试
+    支持SOCKS4,SOCKS5代理
+    支持使用转发 WHOIS 服务器
+
+
     """
 
     # 基于 RFC 3912
@@ -105,8 +107,10 @@ def WHOIS_connect(domain_punycode,
         return True
 
     def check_WHOIS_server(query_str):
-        """检查WHOIS服务器是否需要额外参数
-        基于RFC3192协议及WHOIS服务器特殊的请求参数修正查询字符串格式"""
+        """
+        检查WHOIS服务器是否需要额外参数
+        基于RFC3192协议及WHOIS服务器特殊的请求参数修正查询字符串格式
+        """
         # whois.jprs.jp
         if WHOIS_srv == "whois.jprs.jp":
             query_str = "{domain}/e".format(domain=domain_punycode)
