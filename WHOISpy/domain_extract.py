@@ -36,6 +36,9 @@ https://tools.ietf.org/html/rfc1035
 2.国际化域名(IDNA)
 https://zh.wikipedia.org/wiki/%E5%9B%BD%E9%99%85%E5%8C%96%E5%9F%9F%E5%90%8D
 https://tools.ietf.org/html/rfc3490
+
+code reference :
+1. https://github.com/john-kurkowski/tldextract/blob/fecd89fab44f8308d2f2281cc39d84cdf25715a2/tldextract/tldextract.py
 """
 
 import os
@@ -59,9 +62,9 @@ class Domain(object):
         构造函数
         :param url:需要解析的url
         """
+        global suffixes
         Domain.__url = url
         # 载入 public_suffix_list.dat 数据
-        global suffixes
         if not suffixes:
             suffix_file_path = os.path.join(os.getcwd(), os.path.dirname(__file__), 'data', 'public_suffix_list.dat')
             with open(suffix_file_path) as sf:
@@ -89,42 +92,44 @@ class Domain(object):
         解析域名,将解析数据存入相应的静态变量中
         :param url:经过预处理的url
         """
+        global suffixes
         # punycode格式统一转为utf8
         if url.find('xn--') != -1:
             url = self.__punycode2utf8(url)
-        # 处理 public_suffix_list 中 *.tld 的情况
-        re_flag = False
-        # 最长匹配后缀为 suffix,并再取后一级一并作为域名
-        global suffixes
-        d = ''
-        for section in reversed(url.split('.')):
-            if d:
-                d = b'.' + d
-            d = section + d
-            # 若上次发现了 *.<domain> 的情况(即代表下一级域名任何字符均仍可视为suffixes)
-            # 则这次不用判断,直接进入下次循环,并将结果添加进 suffixes 中
-            if re_flag:
-                re_flag = False
-                suffixes.add(d)
-                continue
-            # 发现域名不再属于 suffixes 时退出
-            if d not in suffixes:
-                if '*.' + d in suffixes:
-                    re_flag = True
-                    continue
-                else:
+        # 基于 public_suffix_list 进行最长匹配,提取域名关键信息
+        if not url.count('.'):  # 解析失败,返回空数据
+            Domain.domain = url
+            Domain.suffix = ''
+            Domain.tld = ''
+            Domain.domain_punycode = ''
+            Domain.suffix_punycode = ''
+            Domain.tld_punycode = ''
+        else:  # 解析成功情况
+            url_part = url.split('.')
+            for i in xrange(url.count('.') + 1):
+                t = '.'.join(url_part[i:])
+                if t in suffixes:  # 最长后缀匹配
+                    Domain.suffix = t
                     break
-        # 解析域名
-        Domain.domain = d
-        Domain.suffix = Domain.domain.split('.', 1)[1]
-        Domain.tld = Domain.suffix.split('.')[-1]
-        Domain.domain_punycode = self.__utf82punycode(Domain.domain)
-        Domain.suffix_punycode = self.__utf82punycode(Domain.suffix)
-        Domain.tld_punycode = self.__utf82punycode(Domain.tld)
+            if not Domain.suffix:  # 没有匹配到,默认返回空
+                Domain.domain, Domain.suffix, Domain.tld = url, '', ''
+            else:
+                u = url[:url.rfind('.' + Domain.suffix)]
+                if u.count('.'):
+                    d = u.split('.')[-1]
+                else:
+                    d = u
+                Domain.domain = d + '.' + Domain.suffix
+                Domain.tld = Domain.suffix.split('.')[-1]
+                # print Domain.domain, Domain.suffix
+                Domain.domain_punycode = self.__utf82punycode(Domain.domain)
+                Domain.suffix_punycode = self.__utf82punycode(Domain.suffix)
+                Domain.tld_punycode = self.__utf82punycode(Domain.tld)
+
 
 if __name__ == '__main__':
-    # Demo
-    d = Domain('google.中国')
+    # Demo - 'https://www.zadna.中国/'
+    d = Domain('https://www.zadna.asdasd/')
     print d.domain
     print d.suffix
     print d.tld
