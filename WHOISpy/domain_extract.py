@@ -121,3 +121,13 @@ class Domain(object):
         Domain.domain_punycode = self.__utf82punycode(Domain.domain)
         Domain.suffix_punycode = self.__utf82punycode(Domain.suffix)
         Domain.tld_punycode = self.__utf82punycode(Domain.tld)
+
+if __name__ == '__main__':
+    # Demo
+    d = Domain('google.中国')
+    print d.domain
+    print d.suffix
+    print d.tld
+    print d.domain_punycode
+    print d.suffix_punycode
+    print d.tld_punycode
