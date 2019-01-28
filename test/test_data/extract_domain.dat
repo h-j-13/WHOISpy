@@ -525,7 +525,7 @@ google.gold
 google.goldpoint
 google.golf
 google.goo
-google.goodhands
+// google.goodhands (This domain is not present in the root zone at this time.)
 google.goodyear
 google.goog
 google.google
@@ -644,7 +644,7 @@ google.it
 google.itau
 google.itv
 google.iveco
-google.iwc
+// google.iwc
 google.jaguar
 google.java
 google.jcb
@@ -654,7 +654,7 @@ google.jeep
 google.jetzt
 google.jewelry
 google.jio
-google.jlc
+// google.jlc
 google.jll
 google.jm
 google.jmp
@@ -802,7 +802,8 @@ google.meme
 google.memorial
 google.men
 google.menu
-google.meo
+// google.meo (Not assigned)
+google.merckmsd
 google.metlife
 // google.mf (Not assigned)
 google.mg
@@ -849,7 +850,7 @@ google.ms
 google.msd
 google.mt
 google.mtn
-google.mtpc
+// google.mtpc (Retired)
 google.mtr
 google.mu
 google.museum
@@ -943,7 +944,7 @@ google.pa
 google.page
 // google.pamperedchef (This domain is not present in the root zone at this time.)
 google.panasonic
-google.panerai
+// google.panerai (This domain is not present in the root zone at this time.)
 google.paris
 google.pars
 google.partners
@@ -1080,7 +1081,7 @@ google.sandvik
 google.sandvikcoromant
 google.sanofi
 google.sap
-google.sapo
+// google.sapo
 google.sarl
 google.sas
 google.save
@@ -1161,7 +1162,7 @@ google.song
 google.sony
 google.soy
 google.space
-google.spiegel
+// google.spiegel
 google.spot
 google.spreadbetting
 google.sr
@@ -1175,7 +1176,7 @@ google.star
 google.starhub
 google.statebank
 google.statefarm
-google.statoil
+// google.statoil
 google.stc
 google.stcgroup
 google.stockholm
@@ -1221,7 +1222,7 @@ google.team
 google.tech
 google.technology
 google.tel
-google.telecity
+// google.telecity
 google.telefonica
 google.temasek
 google.tennis
@@ -1320,7 +1321,7 @@ google.vip
 google.virgin
 google.visa
 google.vision
-google.vista
+// google.vista
 google.vistaprint
 google.viva
 google.vivo
@@ -1376,7 +1377,7 @@ google.xerox
 google.xfinity
 google.xihuan
 google.xin
-google.xperia
+// google.xperia (Not assigned)
 google.xxx
 google.xyz
 google.yachts
