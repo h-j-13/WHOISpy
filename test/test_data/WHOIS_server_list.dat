@@ -6,7 +6,7 @@
 // $ whois .cn -h whois.iana.org 查询WHOIS服务器
 // 或者通过 https://www.iana.org/whois? IANA提供的查询网站
 // 详见 https://github.com/h-j-13/WHOIS-server-list
-// 最后更新于 2018-02-02
+// 最后更新于 2019-1-28
 
 // 格式样例
 // TLD(punycode) : WHOIS服务器地址或IP
@@ -17,10 +17,10 @@
 
 aaa
 aarp
-abarth
+abarth : whois.afilias-srs.net
 abb
-abbott
-abbvie
+abbott : whois.afilias-srs.net
+abbvie : whois.afilias-srs.net
 abc
 able
 abogado
@@ -29,32 +29,32 @@ academy
 accenture
 accountant
 accountants
-aco
-active
+aco : whois.afilias-srs.net
+active : whois.afilias-srs.net
 actor
 adac
-ads
-adult
+ads : whois.nic.google
+adult : whois.afilias-srs.net
 aeg
 aetna
 afamilycompany
 afl
-africa
-agakhan
+africa : africa-whois.registry.net.za
+agakhan : whois.afilias-srs.net
 agency
 aig
-aigo
+aigo : whois.afilias-srs.net
 airbus
 airforce
 airtel
-akdn
-alfaromeo
+akdn : whois.afilias-srs.net
+alfaromeo : whois.afilias-srs.net
 alibaba
 alipay
-allfinanz
-allstate
+allfinanz : whois.ksregistry.net
+allstate : whois.afilias-srs.net
 ally
-alsace
+alsace : whois-alsace.nic.fr
 alstom
 americanexpress
 americanfamily
@@ -63,17 +63,17 @@ amfam
 amica
 amsterdam
 analytics
-android
-anquan
+android : whois.nic.google
+anquan : whois.teleinfo.cn
 anz
 aol
 apartments
-app
-apple
-aquarelle
+app : whois.nic.google
+apple : whois.afilias-srs.net
+aquarelle : whois-aquarelle.nic.fr
 arab
 aramco
-archi
+archi : whois.afilias.net
 army
 art
 arte
@@ -82,19 +82,19 @@ associates
 athleta
 attorney
 auction
-audi
+audi : whois.afilias-srs.net
 audible
-audio
+audio : whois.uniregistry.net
 auspost
 author
-auto
-autos
-avianca
+auto : whois.uniregistry.net
+autos : whois.afilias-srs.net
+avianca : whois.afilias-srs.net
 aws
 axa
 azure
 baby
-baidu
+baidu : whois.gtld.knet.cn
 banamex
 bananarepublic
 band
@@ -114,47 +114,47 @@ bbt
 bbva
 bcg
 bcn
-beats
+beats : whois.afilias-srs.net
 beauty
 beer
 bentley
 berlin
 best
 bestbuy
-bet
+bet : whois.afilias.net
 bharti
 bible
 bid
 bike
 bing
 bingo
-bio
-black
-blackfriday
+bio : whois.afilias.net
+black : whois.afilias.net
+blackfriday : whois.uniregistry.net
 blanco
 blockbuster
 blog
 bloomberg
-blue
+blue : whois.afilias.net
 bms
-bmw
+bmw : whois.ksregistry.net
 bnl
-bnpparibas
-boats
-boehringer
+bnpparibas : whois.afilias-srs.net
+boats : whois.afilias-srs.net
+boehringer : whois.afilias-srs.net
 bofa
-bom
+bom : whois.gtlds.nic.br
 bond
-boo
+boo : whois.nic.google
 book
 booking
 boots
 bosch
-bostik
+bostik : whois-bostik.nic.fr
 boston
 bot
 boutique
-box
+box : whois.aridnrs.net.au
 bradesco
 bridgestone
 broadway
@@ -162,33 +162,33 @@ broker
 brother
 brussels
 budapest
-bugatti
+bugatti : whois.afilias-srs.net
 build
 builders
 business
-buy
+buy : whois.afilias-srs.net
 buzz
 bzh
 cab
 cafe
-cal
+cal : whois.nic.google
 call
 calvinklein
-cam
+cam : whois.ksregistry.net
 camera
 camp
 cancerresearch
 canon
-capetown
+capetown : capetown-whois.registry.net.za
 capital
 capitalone
-car
+car : whois.uniregistry.net
 caravan
 cards
 care
 career
 careers
-cars
+cars : whois.uniregistry.net
 cartier
 casa
 case
@@ -196,29 +196,29 @@ caseih
 cash
 casino
 catering
-catholic
+catholic : whois.aridnrs.net.au
 cba
 cbn
 cbre
-cbs
-ceb
+cbs : whois.afilias-srs.net
+ceb : whois.afilias-srs.net
 center
 ceo
-cern
+cern : whois.afilias-srs.net
 cfa
 cfd
 chanel
-channel
+channel : whois.nic.google
 chase
 chat
 cheap
 chintai
 chloe
-christmas
-chrome
-chrysler
+christmas : whois.uniregistry.net
+chrome : whois.nic.google
+chrysler : whois.afilias-srs.net
 church
-cipriani
+cipriani : whois.afilias-srs.net
 circle
 cisco
 citadel
@@ -228,7 +228,7 @@ city
 cityeats
 claims
 cleaning
-click
+click : whois.uniregistry.net
 clinic
 clinique
 clothing
@@ -239,7 +239,7 @@ coach
 codes
 coffee
 college
-cologne
+cologne : whois.ryce-rsp.com
 comcast
 commbank
 community
@@ -255,14 +255,14 @@ contractors
 cooking
 cookingchannel
 cool
-corsica
-country
+corsica : whois-corsica.nic.fr
+country : whois-dub.mm-registry.com
 coupon
 coupons
-courses
+courses : whois.aridnrs.net.au
 credit
 creditcard
-creditunion
+creditunion : whois.afilias-srs.net
 cricket
 crown
 crs
@@ -272,15 +272,15 @@ csc
 cuisinella
 cymru
 cyou
-dabur
-dad
+dabur : whois.afilias-srs.net
+dad : whois.nic.google
 dance
 data
 date
 dating
-datsun
-day
-dclk
+datsun : whois.nic.gmo
+day : whois.nic.google
+dclk : whois.nic.google
 dds
 deal
 dealer
@@ -293,12 +293,12 @@ delta
 democrat
 dental
 dentist
-desi
+desi : whois.ksregistry.net
 design
-dev
+dev : whois.nic.google
 dhl
 diamonds
-diet
+diet : whois.uniregistry.net
 digital
 direct
 directory
@@ -307,45 +307,45 @@ discover
 dish
 diy
 dnp
-docs
+docs : whois.nic.google
 doctor
-dodge
+dodge : whois.afilias-srs.net
 dog
 doha
 domains
 doosan
 dot
 download
-drive
+drive : whois.nic.google
 dtv
 dubai
 duck
 dunlop
 duns
 dupont
-durban
-dvag
+durban : durban-whois.registry.net.za
+dvag : whois.ksregistry.net
 dvr
 earth
-eat
-eco
-edeka
+eat : whois.nic.google
+eco : whois.afilias-srs.net
+edeka : whois.afilias-srs.net
 education
 email
-emerck
+emerck : whois.afilias-srs.net
 energy
 engineer
 engineering
 enterprises
 epost
-epson
+epson : whois.aridnrs.net.au
 equipment
 ericsson
 erni
-esq
+esq : whois.nic.google
 estate
-esurance
-etisalat
+esurance : whois.afilias-srs.net
+etisalat : whois.centralnic.com
 eurovision
 eus
 events
@@ -354,8 +354,8 @@ exchange
 expert
 exposed
 express
-extraspace
-fage
+extraspace : whois.afilias-srs.net
+fage : whois.afilias-srs.net
 fail
 fairwinds
 faith
@@ -370,11 +370,11 @@ fedex
 feedback
 ferrari
 ferrero
-fiat
+fiat : whois.afilias-srs.net
 fidelity
-fido
+fido : whois.afilias-srs.net
 film
-final
+final : whois.gtlds.nic.br
 finance
 financial
 fire
@@ -388,10 +388,10 @@ flickr
 flights
 flir
 florist
-flowers
+flowers : whois.uniregistry.net
 flsmidth
-fly
-foo
+fly : whois.nic.google
+foo : whois.nic.google
 food
 foodnetwork
 football
@@ -402,13 +402,13 @@ forum
 foundation
 fox
 free
-fresenius
+fresenius : whois.ksregistry.net
 frl
 frogans
 frontdoor
 frontier
 ftr
-fujitsu
+fujitsu : whois.nic.gmo
 fujixerox
 fun
 fund
@@ -419,92 +419,93 @@ gal
 gallery
 gallo
 gallup
-game
+game : whois.uniregistry.net
 games
 gap
 garden
-gbiz
+gbiz : whois.nic.google
 gdn
-gea
+gea : whois.afilias-srs.net
 gent
 genting
 george
 ggee
-gift
+gift : whois.uniregistry.net
 gifts
 gives
 giving
 glade
 glass
-gle
+gle : whois.nic.google
 global
-globo
-gmail
+globo : whois.gtlds.nic.br
+gmail : whois.nic.google
 gmbh
 gmo
-gmx
-godaddy
+gmx : whois-fe1.gmx.tango.knipp.de
+godaddy : whois.afilias-srs.net
 gold
 goldpoint
 golf
-goo
+goo : whois.nic.gmo
 goodhands
 goodyear
-goog
+goog : whois.nic.google
 google
 gop
 got
+gp
 grainger
 graphics
 gratis
-green
+green : whois.afilias.net
 gripe
 grocery
 group
 guardian
 gucci
-guge
+guge : whois.nic.google
 guide
-guitars
+guitars : whois.uniregistry.net
 guru
 hair
 hamburg
-hangout
+hangout : whois.nic.google
 haus
 hbo
 hdfc
 hdfcbank
 health
 healthcare
-help
+help : whois.uniregistry.net
 helsinki
-here
-hermes
+here : whois.nic.google
+hermes : whois.afilias-srs.net
 hgtv
-hiphop
-hisamitsu
-hitachi
-hiv
+hiphop : whois.uniregistry.net
+hisamitsu : whois.nic.gmo
+hitachi : whois.nic.gmo
+hiv : whois.uniregistry.net
 hkt
 hockey
 holdings
 holiday
 homedepot
 homegoods
-homes
+homes : whois.afilias-srs.net
 homesense
 honda
 honeywell
 horse
 hospital
 host
-hosting
+hosting : whois.uniregistry.net
 hot
 hoteles
 hotels
 hotmail
 house
-how
+how : whois.nic.google
 hsbc
 htc
 hughes
@@ -517,14 +518,14 @@ icu
 ieee
 ifm
 iinet
-ikano
-imamat
+ikano : whois.ikano.tld-box.at
+imamat : whois.afilias-srs.net
 imdb
 immo
 immobilien
 industries
-infiniti
-ing
+infiniti : whois.nic.gmo
+ing : whois.nic.google
 ink
 institute
 insurance
@@ -536,31 +537,31 @@ investments
 ipiranga
 irish
 iselect
-ismaili
-ist
-istanbul
+ismaili : whois.afilias-srs.net
+ist : whois.afilias-srs.net
+istanbul : whois.afilias-srs.net
 itau
-itv
+itv : whois.afilias-srs.net
 iveco
 iwc
 jaguar
 java
-jcb
-jcp
-jeep
+jcb : whois.nic.gmo
+jcp : whois.afilias-srs.net
+jeep : whois.afilias-srs.net
 jetzt
 jewelry
 jio
 jlc
-jll
+jll : whois.afilias-srs.net
 jmp
 jnj
-joburg
+joburg : joburg-whois.registry.net.za
 jot
 joy
 jpmorgan
 jprs
-juegos
+juegos : whois.uniregistry.net
 juniper
 kaufen
 kddi
@@ -569,31 +570,31 @@ kerrylogistics
 kerryproperties
 kfh
 kia
-kim
+kim : whois.afilias.net
 kinder
 kindle
 kitchen
 kiwi
-koeln
+koeln : whois.ryce-rsp.com
 komatsu
 kosher
 kpmg
 kpn
-krd
+krd : whois.aridnrs.net.au
 kred
 kuokgroup
 kyoto
 lacaixa
 ladbrokes
-lamborghini
+lamborghini : whois.afilias-srs.net
 lamer
-lancaster
-lancia
+lancaster : whois-lancaster.nic.fr
+lancia : whois.afilias-srs.net
 lancome
 land
 landrover
 lanxess
-lasalle
+lasalle : whois.afilias-srs.net
 lat
 latino
 latrobe
@@ -601,12 +602,12 @@ law
 lawyer
 lds
 lease
-leclerc
+leclerc : whois-leclerc.nic.fr
 lefrak
 legal
 lego
 lexus
-lgbt
+lgbt : whois.afilias.net
 liaison
 lidl
 life
@@ -619,7 +620,7 @@ limited
 limo
 lincoln
 linde
-link
+link : whois.uniregistry.net
 lipsy
 live
 living
@@ -629,32 +630,32 @@ loans
 locker
 locus
 loft
-lol
+lol : whois.uniregistry.net
 london
 lotte
-lotto
+lotto : whois.afilias.net
 love
 lpl
 lplfinancial
 ltd
-ltda
+ltda : whois.afilias-srs.net
 lundbeck
 lupin
 luxe
 luxury
 macys
-madrid
+madrid : whois.madrid.rs.corenic.net
 maif
 maison
 makeup
 man
 management
 mango
-map
+map : whois.nic.google
 market
 marketing
 markets
-marriott
+marriott : whois.afilias-srs.net
 marshalls
 maserati
 mattel
@@ -664,9 +665,9 @@ mcdonalds
 mckinsey
 med
 media
-meet
-melbourne
-meme
+meet : whois.nic.google
+melbourne : whois.aridnrs.net.au
+meme : whois.nic.google
 memorial
 men
 menu
@@ -675,32 +676,32 @@ merckmsd
 metlife
 miami
 microsoft
-mini
+mini : whois.ksregistry.net
 mint
-mit
-mitsubishi
+mit : whois.afilias-srs.net
+mitsubishi : whois.nic.gmo
 mlb
 mls
-mma
+mma : whois-mma.nic.fr
 mobile
 mobily
 moda
 moe
 moi
-mom
+mom : whois.uniregistry.net
 monash
 money
 monster
 montblanc
-mopar
+mopar : whois.afilias-srs.net
 mormon
 mortgage
 moscow
 moto
-motorcycles
-mov
+motorcycles : whois.afilias-srs.net
+mov : whois.nic.google
 movie
-movistar
+movistar : whois-fe.movistar.tango.knipp.de
 msd
 mtn
 mtpc
@@ -711,7 +712,7 @@ nab
 nadex
 nagoya
 nationwide
-natura
+natura : whois.afilias-srs.net
 navy
 nba
 nec
@@ -719,28 +720,28 @@ netbank
 netflix
 network
 neustar
-new
+new : whois.nic.google
 newholland
 news
 next
 nextdirect
-nexus
+nexus : whois.nic.google
 nfl
-ngo
+ngo : whois.publicinterestregistry.net
 nhk
 nico
 nike
 nikon
 ninja
-nissan
+nissan : whois.nic.gmo
 nissay
-nokia
+nokia : whois.afilias-srs.net
 northwesternmutual
 norton
 now
-nowruz
+nowruz : whois.agitsys.net
 nowtv
-nra
+nra : whois.afilias-srs.net
 nrw
 ntt
 nyc
@@ -755,79 +756,79 @@ oldnavy
 ollo
 omega
 one
-ong
-onl
+ong : whois.publicinterestregistry.net
+onl : whois.afilias-srs.net
 online
 onyourside
 ooo
 open
 oracle
 orange
-organic
+organic : whois.afilias.net
 orientexpress
 origins
 osaka
 otsuka
 ott
-ovh
-page
+ovh : whois-ovh.nic.fr
+page : whois.nic.google
 pamperedchef
-panasonic
+panasonic : whois.nic.gmo
 panerai
-paris
-pars
+paris : whois-paris.nic.fr
+pars : whois.agitsys.net
 partners
 parts
 party
 passagens
 pay
 pccw
-pet
+pet : whois.afilias.net
 pfizer
 pharmacy
-phd
+phd : whois.nic.google
 philips
 phone
-photo
+photo : whois.uniregistry.net
 photography
 photos
 physio
 piaget
-pics
+pics : whois.uniregistry.net
 pictet
 pictures
 pid
 pin
 ping
-pink
-pioneer
+pink : whois.afilias.net
+pioneer : whois.nic.gmo
 pizza
 place
-play
+play : whois.nic.google
 playstation
 plumbing
 plus
 pnc
-pohl
-poker
+pohl : whois.ksregistry.net
+poker : whois.afilias.net
 politie
-porn
+porn : whois.afilias-srs.net
 pramerica
 praxi
 press
 prime
-prod
+prod : whois.nic.google
 productions
-prof
-progressive
-promo
+prof : whois.nic.google
+progressive : whois.afilias-srs.net
+promo : whois.afilias.net
 properties
-property
+property : whois.uniregistry.net
 protection
 pru
 prudential
 pub
-pwc
+pwc : whois.afilias-srs.net
 qpon
 quebec
 quest
@@ -840,9 +841,9 @@ realestate
 realtor
 realty
 recipes
-red
+red : whois.afilias.net
 redstone
-redumbrella
+redumbrella : whois.afilias-srs.net
 rehab
 reise
 reisen
@@ -859,26 +860,26 @@ restaurant
 review
 reviews
 rexroth
-rich
+rich : whois.afilias-srs.net
 richardli
 ricoh
 rightathome
 ril
-rio
+rio : whois.gtlds.nic.br
 rip
-rmit
+rmit : whois.aridnrs.net.au
 rocher
 rocks
 rodeo
-rogers
+rogers : whois.afilias-srs.net
 room
-rsvp
-rugby
+rsvp : whois.nic.google
+rugby : whois.centralnic.com
 ruhr
 run
 rwe
 ryukyu
-saarland
+saarland : whois.ksregistry.net
 safe
 safety
 sakura
@@ -894,12 +895,12 @@ sapo
 sarl
 sas
 save
-saxo
+saxo : whois.aridnrs.net.au
 sbi
 sbs
 sca
 scb
-schaeffler
+schaeffler : whois.afilias-srs.net
 schmidt
 scholarships
 school
@@ -909,7 +910,7 @@ science
 scjohnson
 scor
 scot
-search
+search : whois.nic.google
 seat
 secure
 security
@@ -919,35 +920,35 @@ sener
 services
 ses
 seven
-sew
-sex
-sexy
+sew : whois.afilias-srs.net
+sex : whois.afilias-srs.net
+sexy : whois.uniregistry.net
 sfr
 shangrila
-sharp
-shaw
+sharp : whois.nic.gmo
+shaw : whois.afilias-srs.net
 shell
-shia
-shiksha
+shia : whois.agitsys.net
+shiksha : whois.afilias.net
 shoes
 shop
 shopping
-shouji
+shouji : whois.teleinfo.cn
 show
-showtime
-shriram
+showtime : whois.afilias-srs.net
+shriram : whois.afilias-srs.net
 silk
 sina
 singles
 site
-ski
+ski : whois.afilias.net
 skin
 sky
 skype
 sling
 smart
 smile
-sncf
+sncf : whois-sncf.nic.fr
 soccer
 social
 softbank
@@ -957,15 +958,15 @@ solar
 solutions
 song
 sony
-soy
+soy : whois.nic.google
 space
 spiegel
 sport
 spot
 spreadbetting
-srl
-srt
-stada
+srl : whois.afilias-srs.net
+srt : whois.afilias-srs.net
+stada : whois.afilias-srs.net
 staples
 star
 starhub
@@ -974,7 +975,7 @@ statefarm
 statoil
 stc
 stcgroup
-stockholm
+stockholm : whois.afilias-srs.net
 storage
 store
 stream
@@ -1001,17 +1002,17 @@ taobao
 target
 tatamotors
 tatar
-tattoo
+tattoo : whois.uniregistry.net
 tax
 taxi
-tci
+tci : whois.agitsys.net
 tdk
 team
 tech
 technology
 telecity
-telefonica
-temasek
+telefonica : whois-fe.telefonica.tango.knipp.de
+temasek : whois.afilias-srs.net
 tennis
 teva
 thd
@@ -1034,7 +1035,7 @@ tools
 top
 toray
 toshiba
-total
+total : whois-total.nic.fr
 tours
 town
 toyota
@@ -1043,35 +1044,35 @@ trade
 trading
 training
 travelchannel
-travelers
-travelersinsurance
+travelers : whois.afilias-srs.net
+travelersinsurance : whois.afilias-srs.net
 trust
-trv
+trv : whois.afilias-srs.net
 tube
-tui
+tui : whois.ksregistry.net
 tunes
 tushu
 tvs
 ubank
 ubs
-uconnect
+uconnect : whois.afilias-srs.net
 unicom
 university
 uno
-uol
+uol : whois.gtlds.nic.br
 ups
 vacations
 vana
 vanguard
-vegas
+vegas : whois.afilias-srs.net
 ventures
 verisign
 versicherung
 vet
 viajes
 video
-vig
-viking
+vig : whois.afilias-srs.net
+viking : whois.afilias-srs.net
 villas
 vin
 vip
@@ -1084,17 +1085,17 @@ viva
 vivo
 vlaanderen
 vodka
-volkswagen
+volkswagen : whois.afilias-srs.net
 volvo
-vote
-voting
-voto
+vote : whois.afilias.net
+voting : whois.voting.tld-box.at
+voto : whois.afilias.net
 voyage
 vuelos
 wales
 walmart
 walter
-wang
+wang : whois.gtld.knet.cn
 wanggou
 warman
 watch
@@ -1128,60 +1129,60 @@ wtf
 xbox
 xerox
 xfinity
-xihuan
+xihuan : whois.teleinfo.cn
 xin
 xn--11b4c3d
 xn--1ck2e1b
-xn--1qqw23a
-xn--30rr7y
+xn--1qqw23a : whois.ngtld.cn
+xn--30rr7y : whois.gtld.knet.cn
 xn--3bst00m
-xn--3ds443g
+xn--3ds443g : whois.teleinfo.cn
 xn--3oq18vl8pn36a
 xn--3pxu8k
 xn--42c2d9a
 xn--45q11c
 xn--4gbrim
-xn--55qw42g
-xn--55qx5d
+xn--55qw42g : whois.conac.cn
+xn--55qx5d : whois.ngtld.cn
 xn--5su34j936bgsg
 xn--5tzm5g
-xn--6frz82g
+xn--6frz82g : whois.afilias.net
 xn--6qq986b3xl
 xn--80adxhks
-xn--80aqecdr1a
-xn--80asehdb
-xn--80aswg
+xn--80aqecdr1a : whois.aridnrs.net.au
+xn--80asehdb : whois.online.rs.corenic.net
+xn--80aswg : whois.site.rs.corenic.net
 xn--8y0a063a
 xn--9dbq2a
-xn--9et52u
+xn--9et52u : whois.gtld.knet.cn
 xn--9krt00a
-xn--b4w605ferd
+xn--b4w605ferd : whois.afilias-srs.net
 xn--bck1b9a5dre4c
-xn--c1avg
+xn--c1avg : whois.publicinterestregistry.net
 xn--c2br7g
 xn--cck2b3b
-xn--cg4bki
+xn--cg4bki : whois.kr
 xn--czr694b
 xn--czrs0t
-xn--czru2d
+xn--czru2d : whois.gtld.knet.cn
 xn--d1acj3b
 xn--eckvdtc9d
 xn--efvy88h
 xn--estv75g
 xn--fct429k
 xn--fhbei
-xn--fiq228c5hs
-xn--fiq64b
+xn--fiq228c5hs : whois.teleinfo.cn
+xn--fiq64b : whois.gtld.knet.cn
 xn--fjq720a
-xn--flw351e
+xn--flw351e : whois.nic.google
 xn--fzys8d69uvgm
 xn--g2xx48c
 xn--gckr3f0f
 xn--gk3at1e
 xn--hxt814e
-xn--i1b6b1a6a2e
+xn--i1b6b1a6a2e : whois.publicinterestregistry.net
 xn--imr513n
-xn--io0a7i
+xn--io0a7i : whois.ngtld.cn
 xn--j1aef
 xn--jlq61u9w7b
 xn--jvr189m
@@ -1190,59 +1191,59 @@ xn--kpu716f
 xn--kput3i
 xn--mgba3a3ejt
 xn--mgba7c0bbn0a
-xn--mgbaakc7dvf
+xn--mgbaakc7dvf : whois.centralnic.com
 xn--mgbab2bd
 xn--mgbb9fbpob
 xn--mgbca7dzdo
-xn--mgbi4ecexp
-xn--mgbt3dhd
+xn--mgbi4ecexp : whois.aridnrs.net.au
+xn--mgbt3dhd : whois.agitsys.net
 xn--mk1bu44c
 xn--mxtq1m
 xn--ngbc5azd
 xn--ngbe9e0a
 xn--ngbrx
-xn--nqv7f
+xn--nqv7f : whois.publicinterestregistry.net
 xn--nqv7fs00ema
 xn--nyqy26a
 xn--p1acf
 xn--pbt977c
 xn--pssy2u
-xn--q9jyb4c
-xn--qcka1pmc
+xn--q9jyb4c : whois.nic.google
+xn--qcka1pmc : whois.nic.google
 xn--rhqv96g
 xn--rovu88b
-xn--ses554g
+xn--ses554g : whois.registry.knet.cn
 xn--t60b56a
 xn--tckwe
-xn--tiq49xqyj
+xn--tiq49xqyj : whois.aridnrs.net.au
 xn--unup4y
-xn--vermgensberater-ctb
-xn--vermgensberatung-pwb
+xn--vermgensberater-ctb : whois.ksregistry.net
+xn--vermgensberatung-pwb : whois.ksregistry.net
 xn--vhquv
-xn--vuq861b
+xn--vuq861b : whois.teleinfo.cn
 xn--w4r85el8fhu5dnra
 xn--w4rs40l
-xn--xhq521b
-xn--zfr164b
+xn--xhq521b : whois.ngtld.cn
+xn--zfr164b : whois.conac.cn
 xperia
 xyz
-yachts
+yachts : whois.afilias-srs.net
 yahoo
 yamaxun
 yandex
-yodobashi
+yodobashi : whois.nic.gmo
 yoga
 yokohama
 you
-youtube
-yun
+youtube : whois.nic.google
+yun : whois.teleinfo.cn
 zappos
-zara
+zara : whois.afilias-srs.net
 zero
-zip
+zip : whois.nic.google
 zippo
 zone
-zuerich
+zuerich : whois.ksregistry.net
 
 br.com : whois.centralnic.net
 cn.com : whois.centralnic.net
@@ -1322,7 +1323,7 @@ ar : whois.nic.ar
 as : whois.nic.as
 priv.at : whois.nic.priv.at
 at : whois.nic.at
-au : whois.audns.net.au
+au : whois.auda.org.au
 aw : whois.nic.aw
 ax : whois.ax
 
@@ -1432,7 +1433,6 @@ gl : whois.nic.gl
 
 // gm : [WEB]http://www.nic.gm/htmlpages/whois.htm
 // gn : [WEB]http://www.psg.com/dns/gn/
-// gp : [WEB]https://www.dom-enic.com/whois.html
 
 gq : whois.dominio.gq
 
@@ -1452,7 +1452,7 @@ hr : whois.dns.hr
 ht : whois.nic.ht
 hu : whois.nic.hu
 id : whois.id
-ie : whois.domainregistry.ie
+ie : whois.iedr.ie
 il : whois.isoc.org.il
 im : whois.nic.im
 in : whois.inregistry.net
@@ -1513,7 +1513,7 @@ mg : whois.nic.mg
 // mh : [WEB]www.nic.net.mh
 
 mk : whois.marnet.mk
-ml : whois.dot.mk
+ml : whois.dot.ml
 
 // mm : [WEB]www.nic.mm
 
