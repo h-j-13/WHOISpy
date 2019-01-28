@@ -44,5 +44,5 @@ class TestDomain(unittest.TestCase):
         if fail_count:
             print "==================================================================="
             print "(" + str(tld_count - fail_count) + " / " + str(tld_count) + ") TLD pass,",
-            print " total " + str(fail_count) + " tld or suffix can't get their WHOIS server"
-            print "maybe update the WHOISpy/data/WHOIS_server_list.dat can fix a few"
+            print " total : " + str(fail_count) + " tld or suffix can't get their WHOIS server"
+            print "maybe update the WHOISpy/data/WHOIS_server_list.dat can fix it "
