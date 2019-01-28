@@ -67,3 +67,9 @@ class WHOIS_server(object):
         """
         return choice(self.relay_WHOIS_server_list)
 
+
+if __name__ == '__main__':
+    # Demo
+    w = WHOIS_server()
+    print w.get_WHOIS_server("africa")
+    print w.get_WHOIS_server("xn--czru2d")
