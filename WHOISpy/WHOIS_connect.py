@@ -45,17 +45,17 @@ from WHOIS_server import WHOIS_server
 WHOIS_server_data = WHOIS_server()
 
 
-def WHOIS_connect(domain_punycode,
-                  whois_srv="",
-                  socket_time_out=5,
-                  socket_retry_time=1,
-                  use_sock_proxy=False,
-                  proxy_type="SOCKS5",
-                  proxy_ip="",
-                  proxy_port="",
-                  proxy_username="",
-                  proxy_password="",
-                  use_relay_WHOIS_server=False):
+def WHOIS_srv_connect(domain_punycode,
+                      whois_srv="",
+                      socket_time_out=5,
+                      socket_retry_time=1,
+                      use_sock_proxy=False,
+                      proxy_type="SOCKS5",
+                      proxy_ip="",
+                      proxy_port="",
+                      proxy_username="",
+                      proxy_password="",
+                      use_relay_WHOIS_server=False):
     # type: (str, str, int, int, bool, str, str, str, str, str, bool) -> str
     """
     与 WHOIS 服务器通信,获取WHOIS数据
@@ -85,6 +85,10 @@ def WHOIS_connect(domain_punycode,
         检查WHOIS服务器是否需要额外参数
         :return: 基于RFC3192协议及WHOIS服务器特殊的请求参数修正查询字符串格式
         """
+        # 处理含有 "xxx="的情况
+        if query_str.startswith("="):
+            query_str = query_str + "\r\n"
+            return query_str
         # whois.jprs.jp
         if whois_srv == "whois.jprs.jp":
             query_str = "{domain}/e".format(domain=domain_punycode)
@@ -158,7 +162,7 @@ def WHOIS_connect(domain_punycode,
 
 if __name__ == "__main__":
     # use demo
-    print WHOIS_connect("baidu.com", "whois.verisign-grs.com")
-    print WHOIS_connect("baidu.com", "whois.markmonitor.com")
-    print WHOIS_connect("baidu.com", "")
-    print WHOIS_connect("baidu.com", "", use_relay_WHOIS_server=True)
+    print WHOIS_srv_connect("baidu.com", "whois.verisign-grs.com")
+    print WHOIS_srv_connect("baidu.com", "whois.markmonitor.com")
+    print WHOIS_srv_connect("baidu.com", "")
+    print WHOIS_srv_connect("baidu.com", "", use_relay_WHOIS_server=True)
