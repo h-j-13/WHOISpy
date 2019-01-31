@@ -51,6 +51,7 @@ WHOIS_RECORD = {
     "name_server": "",  # 域名服务器
 }
 
+# WHOIS 数据标记位
 FLAG_CANT_DEAL = 0  # 不能处理
 FLAG_OK = 1  # 正常
 FLAG_NO_WHOIS_ADDR = -1  # 未找到WHOIS服务器
@@ -183,16 +184,37 @@ def extract_WHOIS_info(domain_punycode,
                        data,
                        flag,
                        format_time=True,
-                       format_domain_status=True):
-    # type: (str, str, str, str, int, bool, bool) -> dict
+                       format_domain_status=True,
+                       list_name_server=True,
+                       socket_time_out=5,
+                       socket_retry_time=1,
+                       use_sock_proxy=False,
+                       proxy_type="SOCKS5",
+                       proxy_ip="",
+                       proxy_port="",
+                       proxy_username="",
+                       proxy_password="",
+                       use_relay_WHOIS_server=False
+                       ):
+    # type: (str, str, str, str, int, bool, bool, bool, int, int, bool, str, str, str, str, str, bool) -> dict
     """
-    :param domain_punycode: punycode格式的域名
-    :param tld: 顶级域
-    :param whois_addr: whois服务器
-    :param data: 服务器返回数据
-    :param flag: 数据正确性标记位
-    :param format_time: 标准化时间
-    :param format_domain_status: 标准化域名标记
+    :param domain_punycode:             punycode格式的域名
+    :param tld:                         顶级域
+    :param whois_addr:                  whois服务器
+    :param data:                        服务器返回数据
+    :param flag:                        数据正确性标记位
+    :param format_time:                 标准化时间
+    :param format_domain_status:        标准化域名标记
+    :param list_name_server:            列表格式记录域名NS服务器标记
+    :param socket_time_out:             socket 连接超时时间
+    :param socket_retry_time:           socket 连接最大重试次数
+    :param use_sock_proxy:              是否使用socks代理
+    :param proxy_type:                  代理的类型(仅支持 SOCKS4 , SOCKS5 不支持 HTTP,HTTPS 代理)
+    :param proxy_ip:                    代理ip
+    :param proxy_port:                  代理端口
+    :param proxy_username:              代理用户名
+    :param proxy_password:              代理密码
+    :param use_relay_WHOIS_server:      是否使用转发服务器查询标记
     :return: whois 信息字典
     """
     # 返回结果初始化
@@ -217,7 +239,18 @@ def extract_WHOIS_info(domain_punycode,
         # 针对com,net 等具有二级服务器的域名进行特殊处理
         # 1，处理含有 "xxx="的情况
         if is_xxx_exist(whois_details_first):
-            whois_details_first = WHOIS_srv_connect("=" + domain_punycode, whois_addr)
+            whois_details_first = WHOIS_srv_connect("=" + domain_punycode,
+                                                    whois_addr,
+                                                    socket_time_out=socket_time_out,
+                                                    socket_retry_time=socket_retry_time,
+                                                    use_sock_proxy=use_sock_proxy,
+                                                    proxy_type=proxy_type,
+                                                    proxy_ip=proxy_ip,
+                                                    proxy_port=proxy_port,
+                                                    proxy_username=proxy_username,
+                                                    proxy_password=proxy_password,
+                                                    use_relay_WHOIS_server=use_relay_WHOIS_server
+                                                    )
             if whois_details_first.startswith("SOCKET ERROR"):
                 domain_whois["flag"] = FLAG_TOP_WHOIS_FAILED  # WHOIS服务器交互过程中出现异常
             elif not whois_details_first:
@@ -230,7 +263,18 @@ def extract_WHOIS_info(domain_punycode,
         sec_whois_srv = extract_sec_server(whois_details_first, domain_punycode)
         if sec_whois_srv:  # 如果获取到了二级whois地址,更新sec_whois并重新获取数据
             domain_whois["sec_whois_server"] = sec_whois_srv
-            whois_details_sec = WHOIS_srv_connect(domain_punycode, sec_whois_srv)
+            whois_details_sec = WHOIS_srv_connect(domain_punycode,
+                                                  sec_whois_srv,
+                                                  socket_time_out=socket_time_out,
+                                                  socket_retry_time=socket_retry_time,
+                                                  use_sock_proxy=use_sock_proxy,
+                                                  proxy_type=proxy_type,
+                                                  proxy_ip=proxy_ip,
+                                                  proxy_port=proxy_port,
+                                                  proxy_username=proxy_username,
+                                                  proxy_password=proxy_password,
+                                                  use_relay_WHOIS_server=use_relay_WHOIS_server
+                                                  )
             if whois_details_first.startswith("SOCKET ERROR"):
                 domain_whois["flag"] = FLAG_SEC_WHOIS_FAILED  # WHOIS服务器交互过程中出现异常
             elif not whois_details_sec:
@@ -273,7 +317,8 @@ def extract_WHOIS_info(domain_punycode,
         domain_whois["creation_date"] = format_timestamp(domain_whois["creation_date"])
         domain_whois["expiration_date"] = format_timestamp(domain_whois["expiration_date"])
         domain_whois["updated_date"] = format_timestamp(domain_whois["updated_date"])
-
+    if list_name_server:
+        domain_whois["name_server"] = domain_whois["name_server"].split(";")
     return domain_whois
 
 
@@ -281,3 +326,5 @@ if __name__ == '__main__':
     # use demo
     data = WHOIS_srv_connect("baidu.com", "whois.verisign-grs.com")
     wr = extract_WHOIS_info("baidu.com", "com", "whois.verisign-grs.com", data, 1)
+    print data
+    print wr
