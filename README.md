@@ -1,11 +1,16 @@
-WHOISpy
-----------------------
-a pure python WHOIS-client based on RFC 3912, acquire & extract & analysis the WHOIS data
+WHOISpy  
+----------------------  
+WHOISpy是一个Python编写的基于RFC3912的WHOIS客户端,你可以通过它轻松的获取并提取域名WHOIS关键信息
+  
+  todo : finish readme
+## Getting Started  
 
-## Getting Started
-Ops! not finish yet     
-[old ver](https://github.com/h-j-13/WHOIS-client) \<<<
+## Dependencies
+
+## Feature
+
+## Data sources
 
 ## License
-MIT License
+WTFPL License
 
