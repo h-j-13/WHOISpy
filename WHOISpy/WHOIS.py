@@ -64,7 +64,7 @@ def WHOIS(raw_domain,
     :param raw_domain:                  原始url
     :param whois_server:                指定的WHOIS服务器
     :param format_time:                 标准化时间
-    :param format_domain_status:        标准化域名标记
+    :param format_domain_status:        标准化域名状态标记
     :param list_name_server:            列表格式记录域名NS服务器标记
     :param socket_time_out:             socket 连接超时时间
     :param socket_retry_time:           socket 连接最大重试次数
