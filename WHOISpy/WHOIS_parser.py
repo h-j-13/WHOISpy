@@ -2537,24 +2537,26 @@ def jp_manage(data, domain_whois):
     domain_status = ""
     name_server = ""
 
-    pattern = re.compile(r"(Registrant.*|Name Server.*|登録年月日.*|有効期限.*|\
-|状態.*|Name.*|Email.*|電話番号.*|)")
+    pattern = re.compile(r"(\[Status\].*|\[Name Server\].*|\[Created on\].*|\[Expires on\].*|\
+|\[Status\].*|\[Last Updated\].*|\[Name\].*|\[Email\].*|\[Phone\].*|)")
     for match in pattern.findall(data):
-        if match.find("状態") != -1:
+        if match.find("Status") != -1:
             domain_status += match.split("]")[1].strip()
             domain_status += ";"
         elif match.find("Registrant") != -1:
             domain_whois["reg_name"] = match.split("]")[1].strip()
-        elif match.find("登録年月日") != -1:
+        elif match.find("Created on") != -1:
             domain_whois["creation_date"] = match.split("]")[1].strip()
-        elif match.find("有効期限") != -1:
+        elif match.find("Expires on") != -1:
             domain_whois["expiration_date"] = match.split("]")[1].strip()
+        elif match.find("Last Updated") != -1:
+            domain_whois["updated_date"] = match.split("]")[1].strip()
         elif match.find("Email") != -1:
             domain_whois["reg_email"] = match.split("]")[1].strip()
-        elif match.find("電話番号") != -1:
+        elif match.find("Phone") != -1:
             domain_whois["reg_phone"] = match.split("]")[1].strip()
         elif match.find("Name") != -1 and match.find("Name Server") == -1:
-            domain_whois["org_name"] = match.split("]")[1].strip()
+            domain_whois["reg_name"] = match.split("]")[1].strip()
         elif match.find("Name Server") != -1:
             name_server += match.split("]")[1].strip()
             name_server += ";"
@@ -3726,6 +3728,6 @@ def nl_manage(domain_whois, data):
 if __name__ == "__main__":
     # use demo
     w = WHOIS_info_extract_func()
-    print w.get_whois_func("whois.verisign-grs.com")
+    print w.get_whois_func("whois.jprs.jp")
     print w.get_whois_func("whois.cnnic.cn")
     print w.get_whois_func("just for test")

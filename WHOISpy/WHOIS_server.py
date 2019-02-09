@@ -71,7 +71,7 @@ class WHOIS_server(object):
 if __name__ == '__main__':
     # Demo
     w = WHOIS_server()
-    print w.get_WHOIS_server("")
+    print w.get_WHOIS_server("jp")
     print w.get_WHOIS_server("just_for_test")
     print w.get_WHOIS_server("africa")
     print w.get_WHOIS_server("xn--czru2d")

@@ -134,8 +134,8 @@ def WHOIS(raw_domain,
 
 if __name__ == '__main__':
     # use demo
-    ws = WHOIS("baidu.com", "whois.verisign-grs.com")
-
+    ws = WHOIS("google.jp")
+    print ws['details']
     import json
 
     print(json.dumps(ws, indent=4))

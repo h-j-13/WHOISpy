@@ -133,3 +133,4 @@ whois.nic.sm : sm_manage
 whois.eu : eu_manage
 whois.tcinet.ru :ru_manage
 whois.denic.de : de_manage
+whois.jprs.jp : jp_manage
