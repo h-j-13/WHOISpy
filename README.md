@@ -56,18 +56,18 @@ def WHOIS(raw_domain,
   :param raw_domain: 				原始url  
   :param whois_server: 				指定的WHOIS服务器  
   :param format_time: 				标准化时间  
-  :param format_domain_status: 		标准化域名状态标记  
+  :param format_domain_status: 		        标准化域名状态标记  
   :param list_name_server: 			列表格式记录域名NS服务器标记  
-  :param socket_time_out:           socket 连接超时时间  
-  :param socket_retry_time:         socket 连接最大重试次数  
+  :param socket_time_out:                       socket 连接超时时间  
+  :param socket_retry_time:                     socket 连接最大重试次数  
   :param use_sock_proxy: 			是否使用socks代理  
   :param proxy_type: 				代理的类型(仅支持 SOCKS4 , SOCKS5 不支持 HTTP,HTTPS 代理)  
-  :param proxy_ip: 					代理ip  
+  :param proxy_ip: 			        代理ip  
   :param proxy_port: 				代理端口  
   :param proxy_username: 			代理用户名  
   :param proxy_password: 			代理密码  
-  :param use_relay_WHOIS_server: 	是否使用转发服务器查询标记  
-  :return: 经过关键字段解析及标准化的WHOIS信息字典  
+  :param use_relay_WHOIS_server: 	        是否使用转发服务器查询标记  
+  :return:                                      经过关键字段解析及标准化的WHOIS信息字典  
  """
  
  ...
@@ -84,13 +84,13 @@ WHOISpy基于 [RFC 3912](https://tools.ietf.org/html/rfc3912) 协议所规定的
 
 1. 获取输入,解析域名
 2. 根据域名顶级域选择对应的WHOIS服务器
-3. 向相应的WHOIS服务器发送查询请求
-	3.1 如果改顶级域存在二级WHOIS服务器,则在通讯结果中寻找二级WHOIS服务器地址
+3. 向相应的WHOIS服务器发送查询请求       
+	3.1 如果改顶级域存在二级WHOIS服务器,则在通讯结果中寻找二级WHOIS服务器地址        
 	3.2 向找到的二级WHOIS服务器发出查询请求  
 4. 整合结果,根据顶级域选择不同的模板对WHOIS原始数据进行解析,提取关键字
                                
 ## 依赖环境  
-安装、使用WHOISpy时**不需要**提前安装任何第三方库.
+安装、使用WHOISpy时**不需要**提前安装任何第三方库.     
 为了支持socks代理,使用了[Anorov](https://github.com/Anorov) 的 **[PySocks](https://github.com/Anorov/PySocks)**,为了方便使用已将代码复制到本repo内.
   
   
