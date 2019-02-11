@@ -92,7 +92,12 @@ WHOISpy基于 [RFC 3912](https://tools.ietf.org/html/rfc3912) 协议所规定的
 ## 依赖环境  
 安装、使用WHOISpy时**不需要**提前安装任何第三方库.     
 为了支持socks代理,使用了[Anorov](https://github.com/Anorov) 的 **[PySocks](https://github.com/Anorov/PySocks)**,为了方便使用已将代码复制到本repo内.
-  
+
+如果希望获取**更好的时间处理能力**,请安装pytz与datetuil这两个第三方库
+```shell
+pip install pytz
+pip install python-dateutil
+```  
   
 ## 数据
 
