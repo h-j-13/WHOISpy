@@ -1,7 +1,7 @@
 
 WHOISpy
  ---------------------- 
-![](https://img.shields.io/badge/license-WTFPL-blue.svg) ![](https://img.shields.io/github/repo-size/h-j-13/WHOISpy.svg) ![](https://img.shields.io/bitbucket/issues-raw/h-j-13/WHOISpy.svg) ![](https://img.shields.io/github/forks/h-j-13/WHOISpy.svg?label=Fork) ![](https://img.shields.io/github/stars/h-j-13/WHOISpy.svg?style=social) 
+![](https://img.shields.io/badge/Python-2.7.15-blue.svg) ![](https://img.shields.io/badge/license-WTFPL-blue.svg) ![](https://img.shields.io/github/repo-size/h-j-13/WHOISpy.svg) ![](https://img.shields.io/bitbucket/issues-raw/h-j-13/WHOISpy.svg) ![](https://img.shields.io/github/stars/h-j-13/WHOISpy.svg?style=social) 
 
 WHOISpy是一个Python编写的基于RFC3912的智能WHOIS客户端,你可以通过它轻松的获取并提取域名WHOIS关键信息  
 
