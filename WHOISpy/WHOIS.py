@@ -82,11 +82,18 @@ def WHOIS(raw_domain,
     # 处理域名信息
     d = Domain(raw_domain)
     tld = d.tld_punycode
-    if not tld:
+    if not tld:  # 无法解析出TLD
         res = copy.deepcopy(WHOIS_RECORD)
         res["domain"] = raw_domain
         res["flag"] = FLAG_CANT_DEAL
-        res["details"] = "WHOIS ERROR : DOMAIN EXTRACT FAILED " + str(raw_domain)
+        res["details"] = "WHOIS ERROR : DOMAIN EXTRACT FAILED (No TLD)" + str(raw_domain)
+        res["top_whois_detail"] = res["details"]
+        return res
+    if not d.domain_punycode:  # 无法解析域名
+        res = copy.deepcopy(WHOIS_RECORD)
+        res["domain"] = raw_domain
+        res["flag"] = FLAG_CANT_DEAL
+        res["details"] = "WHOIS ERROR : DOMAIN EXTRACT FAILED (No Domain punycode)" + str(raw_domain)
         res["top_whois_detail"] = res["details"]
         return res
 
@@ -134,7 +141,7 @@ def WHOIS(raw_domain,
 
 if __name__ == '__main__':
     # use demo
-    ws = WHOIS("google.jp")
+    ws = WHOIS(".ac.gov.br")
     print ws['details']
     import json
 

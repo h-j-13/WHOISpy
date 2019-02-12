@@ -85,7 +85,10 @@ class Domain(object):
 
     def __utf82punycode(self, utf8_str):
         """将utf8编码字符串转化为punycode字符串"""
-        return str(utf8_str).decode('utf8').encode('idna')
+        try:
+            return str(utf8_str).decode('utf8').encode('idna')
+        except UnicodeError:    #
+            return ""
 
     def extract_domain(self, url):
         """
@@ -121,7 +124,6 @@ class Domain(object):
                     d = u
                 Domain.domain = d + '.' + Domain.suffix
                 Domain.tld = Domain.suffix.split('.')[-1]
-                # print Domain.domain, Domain.suffix
                 Domain.domain_punycode = self.__utf82punycode(Domain.domain)
                 Domain.suffix_punycode = self.__utf82punycode(Domain.suffix)
                 Domain.tld_punycode = self.__utf82punycode(Domain.tld)
@@ -129,7 +131,7 @@ class Domain(object):
 
 if __name__ == '__main__':
     # Demo - 'https://www.zadna.中国/'
-    d = Domain('https://www.zadna.asdasd/')
+    d = Domain('.ac.gov.br')
     print d.domain
     print d.suffix
     print d.tld
