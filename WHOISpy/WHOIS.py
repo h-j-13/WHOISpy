@@ -141,7 +141,7 @@ def WHOIS(raw_domain,
 
 if __name__ == '__main__':
     # use demo
-    ws = WHOIS(".ac.gov.br")
+    ws = WHOIS("servicebristol24.co.uk")
     print ws['details']
     import json
 

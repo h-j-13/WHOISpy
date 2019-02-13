@@ -523,7 +523,10 @@ def extract_WHOIS_info(domain_punycode,
         else:
             domain_whois["flag"] = FLAG_NO_SEC_WHOI_ADDR  # 没有获取到二级WHOIS服务器
 
-    domain_whois["details"] = whois_details_first + "\n##############################\n" + whois_details_sec
+    if whois_details_sec:
+        domain_whois["details"] = whois_details_first + "\n---\n" + whois_details_sec
+    else:
+        domain_whois["details"] = whois_details_first
 
     # 使用提取函数处理whois获取字典 依次解析一级/二级WHOIS数据
     try:
