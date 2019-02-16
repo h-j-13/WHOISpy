@@ -514,7 +514,7 @@ def extract_WHOIS_info(domain_punycode,
                                                   proxy_password=proxy_password,
                                                   use_relay_WHOIS_server=use_relay_WHOIS_server
                                                   )
-            if whois_details_first.startswith("SOCKET ERROR"):
+            if whois_details_sec.startswith("SOCKET ERROR"):
                 domain_whois["flag"] = FLAG_SEC_WHOIS_FAILED  # WHOIS服务器交互过程中出现异常
             elif not whois_details_sec:
                 domain_whois["flag"] = FLAG_EMPTY_WHOIS_INFO  # 获取到空数据
